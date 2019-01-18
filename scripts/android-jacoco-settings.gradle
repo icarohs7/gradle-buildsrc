@@ -8,6 +8,14 @@ tasks.withType(Test) {
     jacoco.includeNoLocationClasses = true
 }
 
+android {
+    buildTypes {
+        debug {
+            testCoverageEnabled = true
+        }
+    }
+}
+
 task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'createDebugCoverageReport']) {
 
     reports {
