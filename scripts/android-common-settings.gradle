@@ -16,7 +16,7 @@ android {
     }
 
     dependencies {
-        testImplementation(TestDeps.core)
+        testImplementation(TestDeps.androidCore)
         androidTestImplementation(AndroidTestDeps.core)
         androidTestUtil(AndroidTestDeps.testOrchestrator)
         androidTestImplementation(AndroidTestDeps.barista) {
@@ -26,10 +26,6 @@ android {
 
         if (project.getPlugins().hasPlugin("com.android.application"))
             debugImplementation("com.amitshekhar.android:debug-db:1.0.4")
-        if (project.name != "sigeinstrumentedtestutils")
-            androidTestImplementation(project(":sigeinstrumentedtestutils"))
-        if (project.name != "sigecore")
-            implementation(project(":sigecore"))
     }
 
     dataBinding {

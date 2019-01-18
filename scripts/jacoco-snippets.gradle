@@ -1,4 +1,12 @@
-apply(plugin: "jacoco")
+/* Including jacoco for android modules */
+
+//Buildscript
+classpath("org.jacoco:org.jacoco.core:0.8.2")
+
+//Target app or library module
+plugins {
+    id("jacoco")
+}
 
 jacoco {
     toolVersion = "0.8.2"
@@ -24,8 +32,8 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
             'android/**/*.*',
             '**/*$[0-9].*'
     ]
-    def debugTree = fileTree(dir: "${project.buildDir}/tmp/kotlin-classes/debug", excludes: fileFilter)
-    def mainSrc = "${project.projectDir}/src/main/kotlin"
+    def debugTree = fileTree(dir: "$project.buildDir/tmp/kotlin-classes/debug", excludes: fileFilter)
+    def mainSrc = "$project.projectDir/src/main/kotlin"
 
     sourceDirectories = files([mainSrc])
     classDirectories = files([debugTree])
