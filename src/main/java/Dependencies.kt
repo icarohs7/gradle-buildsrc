@@ -16,6 +16,7 @@ object Deps {
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
     const val rxJava2 = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
+    const val snakeYaml = "org.yaml:snakeyaml:${Versions.snakeYaml}"
     const val tornadoFx = "no.tornado:tornadofx:${Versions.tornadoFx}"
 }
 
@@ -192,6 +193,7 @@ object Versions {
     const val rxRelay = "2.1.0"
     const val simpleAuthFacebook = "2.1.4"
     const val smartScheduler = "0.0.14"
+    const val snakeYaml = "1.23"
     const val spinkit = "1.2.0"
     const val splitties = "3.0.0-alpha02"
     const val spotsdialog = "1.1"
