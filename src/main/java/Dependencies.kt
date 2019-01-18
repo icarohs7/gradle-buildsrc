@@ -13,6 +13,7 @@ object Deps {
     const val fuel = "com.github.kittinunf.fuel:fuel:${Versions.fuel}"
     const val jsonIter = "com.jsoniter:jsoniter:${Versions.jsonIter}"
     const val khronos = "com.github.hotchemi:khronos:${Versions.khronos}"
+    const val koinCore = "org.koin:koin-core:${Versions.koin}"
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
     const val rxJava2 = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
