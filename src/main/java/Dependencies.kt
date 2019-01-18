@@ -66,6 +66,7 @@ object AndroidDeps {
     const val smartScheduler = "io.hypertrack:smart-scheduler:${Versions.smartScheduler}"
     const val spinKit = "com.github.ybq:Android-SpinKit:${Versions.spinkit}"
     const val splittiesLifecycle = "com.louiscad.splitties:splitties-lifecycle-coroutines:${Versions.splitties}"
+    const val splittiesArchLifecycle = "com.louiscad.splitties:splitties-arch-lifecycle:${Versions.splitties}"
     const val spotsDialog = "com.github.d-max:spots-dialog:${Versions.spotsdialog}@aar"
     const val stateViews = "com.github.kobeumut:StateViews:${Versions.stateViews}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
