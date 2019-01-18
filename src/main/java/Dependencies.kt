@@ -87,6 +87,7 @@ object TestDeps {
 
     val androidCore = core + listOf(
             "androidx.room:room-testing:${Versions.room}",
+            "androidx.test:core:${Versions.testCore}",
             "org.robolectric:robolectric:${Versions.robolectric}"
     )
 }
@@ -98,7 +99,7 @@ object AndroidTestDeps {
             "androidx.test:rules:${Versions.testRules}"
     ) + TestDeps.core.filterNot { it.contains("org.robolectric:robolectric") }
 
-    const val barista = "com.schibsted.spain:barista:2.7.1"
+    const val barista = "com.schibsted.spain:barista:${Versions.barista}"
     const val testOrchestrator = "androidx.test:orchestrator:${Versions.testRules}"
 }
 
@@ -158,9 +159,11 @@ object Versions {
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "5c43f61b45"
 
+    const val barista = "2.7.1"
     const val fixd = "1.0.3"
     const val kotlinAssertUtils = "0.8.0"
     const val robolectric = "4.1"
+    const val testCore: String = "1.1.0"
 
     const val espresso = "3.1.1"
     const val testRules = "1.1.1"
