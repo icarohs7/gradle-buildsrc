@@ -8,6 +8,7 @@ object Deps {
     const val arrowQueryLanguage = "io.arrow-kt:arrow-query-language:${Versions.arrow}"
     const val arrowSyntax = "io.arrow-kt:arrow-syntax:${Versions.arrow}"
     const val arrowTypeclasses = "io.arrow-kt:arrow-typeclasses:${Versions.arrow}"
+    const val coroutinesJavaFx = "org.jetbrains.kotlinx:kotlinx-coroutines-javafx:${Versions.coroutines}"
     const val coroutinesRx2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${Versions.coroutines}"
     const val fuel = "com.github.kittinunf.fuel:fuel:${Versions.fuel}"
     const val jsonIter = "com.jsoniter:jsoniter:${Versions.jsonIter}"
