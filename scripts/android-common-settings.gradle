@@ -1,0 +1,56 @@
+android {
+    compileSdkVersion(28)
+
+    defaultConfig {
+        minSdkVersion(21)
+        targetSdkVersion(28)
+        testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
+        testInstrumentationRunnerArguments(clearPackageData: "true")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled(false)
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        }
+    }
+
+    dependencies {
+        testImplementation(TestDeps.core)
+        androidTestImplementation(AndroidTestDeps.core)
+        androidTestUtil(AndroidTestDeps.testOrchestrator)
+        androidTestImplementation(AndroidTestDeps.barista) {
+            exclude(group: "com.android.support")
+            exclude(group: "org.jetbrains.kotlin")
+        }
+
+        if (project.getPlugins().hasPlugin("com.android.application"))
+            debugImplementation("com.amitshekhar.android:debug-db:1.0.4")
+        if (project.name != "sigeinstrumentedtestutils")
+            androidTestImplementation(project(":sigeinstrumentedtestutils"))
+        if (project.name != "sigecore")
+            implementation(project(":sigecore"))
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility(1.8)
+        targetCompatibility(1.8)
+    }
+
+    testOptions {
+        execution("ANDROIDX_TEST_ORCHESTRATOR")
+        unitTests {
+            includeAndroidResources(true)
+            returnDefaultValues(true)
+        }
+    }
+
+    packagingOptions {
+        pickFirst("META-INF/library_release.kotlin_module")
+        pickFirst("META-INF/lib_release.kotlin_module")
+    }
+}
