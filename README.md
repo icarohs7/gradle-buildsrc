@@ -1,4 +1,4 @@
-# unox-dependencies
+# unox-buildsrc
 
 ## Description
-Helper repository used to organize my dependencies
+BuildSrc folder I use on many projects, aggregating helper scripts and dependencies
