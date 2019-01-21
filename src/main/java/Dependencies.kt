@@ -35,6 +35,7 @@ object JavaFxDeps {
     const val ikonliIcomoon = "org.kordamp.ikonli:ikonli-icomoon-pack:${Versions.ikonli}"
     const val ikonliIonicons = "org.kordamp.ikonli:ikonli-ionicons-pack:${Versions.ikonli}"
     const val ikonliIonicons4 = "org.kordamp.ikonli:ikonli-ionicons4-pack:${Versions.ikonli}"
+    const val ikonliJavaFx = "org.kordamp.ikonli:ikonli-javafx:${Versions.ikonli}"
     const val ikonliLigatureSymbols = "org.kordamp.ikonli:ikonli-ligaturesymbols-pack:${Versions.ikonli}"
     const val ikonliMaki = "org.kordamp.ikonli:ikonli-maki-pack:${Versions.ikonli}"
     const val ikonliMaki2 = "org.kordamp.ikonli:ikonli-maki2-pack:${Versions.ikonli}"
