@@ -241,13 +241,13 @@ object Versions {
     const val stateViews = "0.5"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroid = "2.4.3"
+    const val unoxAndroid = "2.4.4"
 
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
     const val kotlinAssertUtils = "0.8.0"
     const val robolectric = "4.1"
-    const val testCore: String = "1.1.0"
+    const val testCore = "1.1.0"
 
     const val espresso = "3.1.1"
     const val testRules = "1.1.1"
