@@ -91,6 +91,7 @@ object AndroidDeps {
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val disposer = "io.sellmair:disposer:${Versions.disposer}"
     const val drawableToolbox = "com.github.duanhong169:drawabletoolbox:${Versions.drawableToolbox}"
+    const val expansionPanel = "com.github.florent37:expansionpanel:${Versions.expansionPanel}"
     const val flashbar = "com.andrognito.flashbar:flashbar:${Versions.flashBar}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
@@ -122,6 +123,7 @@ object AndroidDeps {
     const val reactiveNetwork = "com.github.pwittchen:reactivenetwork-rx2:${Versions.reactiveNetwork}"
     const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
     const val rxPermission = "com.github.vanniktech:RxPermission:${Versions.rxPermissions}"
     const val simpleAuth = "com.jaychang:simpleauth-facebook:${Versions.simpleAuthFacebook}"
     const val smartScheduler = "io.hypertrack:smart-scheduler:${Versions.smartScheduler}"
@@ -168,6 +170,8 @@ object AndroidDeps {
     const val splittiesViewsSelectableAppcompat = "com.louiscad.splitties:splitties-views-selectable-appcompat:${Versions.splitties}"
     const val splittiesViewsSelectableConstraintlayout = "com.louiscad.splitties:splitties-views-selectable-constraintlayout:${Versions.splitties}"
     const val spotsDialog = "com.github.d-max:spots-dialog:${Versions.spotsdialog}@aar"
+    const val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
+    const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     const val stateViews = "com.github.kobeumut:StateViews:${Versions.stateViews}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
@@ -198,7 +202,7 @@ object AndroidTestDeps {
             "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
             "androidx.test.espresso:espresso-intents:${Versions.espresso}",
             "androidx.test:rules:${Versions.testRules}"
-    ) + TestDeps.core.filterNot { it.contains("org.robolectric:robolectric") }
+    ) + TestDeps.androidCore.filterNot { it.contains("org.robolectric:robolectric") }
 
     const val barista = "com.schibsted.spain:barista:${Versions.barista}"
     const val testOrchestrator = "androidx.test:orchestrator:${Versions.testRules}"
@@ -217,6 +221,7 @@ object Versions {
     const val coroutines = "1.1.1"
     const val disposer = "1.0.0"
     const val drawableToolbox = "1.0.7"
+    const val expansionPanel = "1.2.2"
     const val flashBar = "1.0.3"
     const val fragment = "1.0.0"
     const val fuel = "2.0.0"
@@ -235,7 +240,7 @@ object Versions {
     const val lives = "1.2.1"
     const val maskEditText = "1.1.1"
     const val materialDesign = "1.0.0"
-    const val materialDialogs = "2.0.0-rc7"
+    const val materialDialogs = "2.0.0-rc9"
     const val materialSpinner = "1.3.1"
     const val multiLineRadioGroup = "1.0.0.6"
     const val mural = "1.0.1"
@@ -254,6 +259,7 @@ object Versions {
     const val retrofit = "2.5.0"
     const val retrofitKotlinxSerializationConverter = "0.2.0"
     const val room = "2.0.0"
+    const val rxAndroid = "2.1.0"
     const val rxJava = "2.2.6"
     const val rxPermissions = "0.7.0"
     const val rxRelay = "2.1.0"
@@ -264,9 +270,10 @@ object Versions {
     const val splitties = "3.0.0-alpha02"
     const val spotsdialog = "1.1"
     const val stateViews = "0.5"
+    const val stetho = "1.5.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroid = "2.4.4"
+    const val unoxAndroid = "6a944790c3"
 
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
