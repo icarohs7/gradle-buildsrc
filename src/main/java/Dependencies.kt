@@ -253,7 +253,7 @@ object Versions {
     const val playServicesPlaces = "16.0.0"
     const val preferenceKtx = "1.0.0"
     const val pugNotification = "1.8.1"
-    const val quantum = "1.0.0-RC.0"
+    const val quantum = "1.0.0"
     const val reactiveLocation2 = "2.1"
     const val reactiveNetwork = "3.0.2"
     const val recyclerView = "1.0.0"
