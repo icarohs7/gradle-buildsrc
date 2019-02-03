@@ -175,6 +175,7 @@ object AndroidDeps {
     const val stateViews = "com.github.kobeumut:StateViews:${Versions.stateViews}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
+    const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
 }
 
 object AndroidKaptDeps {
@@ -274,6 +275,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "2.4.6"
+    const val unoxAndroidArch = "0.11"
 
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
