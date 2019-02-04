@@ -286,7 +286,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "2.4.7"
-    const val unoxAndroidArch = "0.2"
+    const val unoxAndroidArch = "0.21"
 
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
