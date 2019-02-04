@@ -129,6 +129,7 @@ object AndroidDeps {
     const val rxBindingCore = "com.jakewharton.rxbinding3:rxbinding-core:${Versions.rxBinding}"
     const val rxBindingDrawerLayout = "com.jakewharton.rxbinding3:rxbinding-drawerlayout:${Versions.rxBinding}"
     const val rxBindingLeanback = "com.jakewharton.rxbinding3:rxbinding-leanback:${Versions.rxBinding}"
+    const val rxBindingMaterial = "com.jakewharton.rxbinding3:rxbinding-material:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding3:rxbinding-recyclerview:${Versions.rxBinding}"
     const val rxBindingSlidingPaneLayout = "com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:${Versions.rxBinding}"
     const val rxBindingSwipeRefreshLayout = "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:${Versions.rxBinding}"
