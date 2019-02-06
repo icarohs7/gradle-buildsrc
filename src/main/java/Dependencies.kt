@@ -246,7 +246,7 @@ object Versions {
     const val kFormMaster = "6.1.1"
     const val khronos = "0.9.0"
     const val koin = "1.0.2"
-    const val kotlin = "1.3.20"
+    const val kotlin = "1.3.21"
     const val kotlinxSerialization = "0.10.0"
     const val kotpref = "2.6.0"
     const val lifecycle = "2.0.0"
