@@ -9,6 +9,5 @@ ext {
     androidCommonSettings = "$scriptDir/android-common-settings.gradle"
     androidJacocoSettings = "$scriptDir/android-jacoco-settings.gradle"
     androidPublishSettings = "$scriptDir/android-publish-settings.gradle"
-    androidSharedDependencies = "$scriptDir/android-shared-dependencies.gradle"
     projectsRepositories = "$scriptDir/projects-repositories.gradle"
 }
