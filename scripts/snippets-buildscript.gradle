@@ -1,0 +1,13 @@
+buildscript {
+    apply(from: "$rootDir/buildSrc/scripts/register-scripts-extra-props.gradle")
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:3.3.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}")
+        classpath("android.arch.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}")
+    }
+}

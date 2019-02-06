@@ -1,0 +1,11 @@
+List<String> sigeInstrumentedTestUtilsExceptions = [
+        "sigeinstrumentedtestutils", "resmodule", "facebookloginresources", "sigeresources"
+]
+subprojects { proj ->
+    afterEvaluate {
+        dependencies {
+            if (!(proj.name in sigeInstrumentedTestUtilsExceptions))
+                androidTestImplementation(project(":sigeinstrumentedtestutils"))
+        }
+    }
+}
