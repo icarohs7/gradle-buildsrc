@@ -38,6 +38,7 @@ object Deps {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitKotlinxSerializationConverter = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitKotlinxSerializationConverter}"
     const val rxJava2 = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
+    const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
     const val snakeYaml = "org.yaml:snakeyaml:${Versions.snakeYaml}"
 }
@@ -279,6 +280,7 @@ object Versions {
     const val rxAndroid = "2.1.0"
     const val rxBinding = "3.0.0-alpha2"
     const val rxJava = "2.2.6"
+    const val rxKotlin = "2.2.0"
     const val rxPermissions = "0.7.0"
     const val rxRelay = "2.1.0"
     const val simpleAuthFacebook = "2.1.4"
