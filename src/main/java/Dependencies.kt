@@ -286,7 +286,7 @@ object Versions {
     const val recyclerView = "1.0.0"
     const val retrofit = "2.5.0"
     const val retrofitKotlinxSerializationConverter = "0.2.0"
-    const val room = "2.0.0"
+    const val room = "2.1.0-alpha04"
     const val rxAndroid = "2.1.0"
     const val rxBinding = "3.0.0-alpha2"
     const val rxJava = "2.2.6"
