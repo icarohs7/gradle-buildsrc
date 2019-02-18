@@ -23,9 +23,6 @@ android {
             exclude(group: "com.android.support")
             exclude(group: "org.jetbrains.kotlin")
         }
-
-        if (project.getPlugins().hasPlugin("com.android.application"))
-            debugImplementation("com.amitshekhar.android:debug-db:1.0.4")
     }
 
     dataBinding {
