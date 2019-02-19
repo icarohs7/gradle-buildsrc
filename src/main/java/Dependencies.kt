@@ -310,7 +310,7 @@ object Versions {
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
     const val kotlinAssertUtils = "0.8.0"
-    const val robolectric = "4.1"
+    const val robolectric = "4.2"
     const val testCore = "1.1.0"
 
     const val espresso = "3.1.1"
