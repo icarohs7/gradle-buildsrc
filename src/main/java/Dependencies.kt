@@ -284,7 +284,7 @@ object Versions {
     const val reactiveLocation2 = "2.1"
     const val reactiveNetwork = "3.0.2"
     const val recyclerView = "1.0.0"
-    const val retrofit = "2.5.0"
+    const val retrofit = "2.5.1-SNAPSHOT"
     const val retrofitKotlinxSerializationConverter = "0.2.0"
     const val room = "2.1.0-alpha04"
     const val rxAndroid = "2.1.0"
