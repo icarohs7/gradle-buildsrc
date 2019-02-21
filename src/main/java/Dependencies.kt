@@ -66,7 +66,7 @@ object JavaFxDeps {
     const val ikonliMaki2 = "org.kordamp.ikonli:ikonli-maki2-pack:${Versions.ikonli}"
     const val ikonliMapicons = "org.kordamp.ikonli:ikonli-mapicons-pack:${Versions.ikonli}"
     const val ikonliMaterialDesign = "org.kordamp.ikonli:ikonli-materialdesign-pack:${Versions.ikonli}"
-    const val ikonliMaterialIcons = "org.kordamp.ikonli:ikonli-materialicons-pack:${Versions.ikonli}"
+    const val ikonliMaterialIcons = "org.kordamp.ikonli:ikonli-material-pack:${Versions.ikonli}"
     const val ikonliMetrizeicons = "org.kordamp.ikonli:ikonli-metrizeicons-pack:${Versions.ikonli}"
     const val ikonliOcticons = "org.kordamp.ikonli:ikonli-octicons-pack:${Versions.ikonli}"
     const val ikonliOpenIconic = "org.kordamp.ikonli:ikonli-openiconic-pack:${Versions.ikonli}"
@@ -307,7 +307,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "32b101df03"
-    const val unoxAndroidArch = "5d5631d8c7"
+    const val unoxAndroidArch = "18445c0f49"
 
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
