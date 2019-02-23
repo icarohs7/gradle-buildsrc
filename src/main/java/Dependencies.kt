@@ -96,6 +96,8 @@ object AndroidDeps {
     const val currencyEditText = "com.github.BlacKCaT27:CurrencyEditText:${Versions.currencyEditText}"
     const val disposer = "io.sellmair:disposer:${Versions.disposer}"
     const val drawableToolbox = "com.github.duanhong169:drawabletoolbox:${Versions.drawableToolbox}"
+    const val epoxy = "com.airbnb.android:epoxy:${Versions.epoxy}"
+    const val epoxyDatabinding = "com.airbnb.android:epoxy-databinding:${Versions.epoxy}"
     const val expansionPanel = "com.github.florent37:expansionpanel:${Versions.expansionPanel}"
     const val flashbar = "com.andrognito.flashbar:flashbar:${Versions.flashBar}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
@@ -204,7 +206,8 @@ object AndroidDeps {
 
 object AndroidKaptDeps {
     val core = listOf(
-            "androidx.room:room-compiler:${Versions.room}"
+            "androidx.room:room-compiler:${Versions.room}",
+            "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
     )
 }
 
@@ -249,6 +252,7 @@ object Versions {
     const val disposer = "2.0.0"
     const val drawableToolbox = "1.0.7"
     const val expansionPanel = "1.2.2"
+    const val epoxy = "3.3.0"
     const val flashBar = "1.0.3"
     const val fragment = "1.0.0"
     const val fuel = "2.0.0"
