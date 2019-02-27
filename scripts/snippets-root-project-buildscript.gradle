@@ -11,3 +11,12 @@ buildscript {
         classpath("android.arch.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}")
     }
 }
+
+plugins {
+    id("com.github.ben-manes.versions") version "0.21.0"
+}
+
+apply(from: projectsRepositories)
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
