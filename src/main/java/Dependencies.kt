@@ -314,7 +314,7 @@ object Versions {
     const val stetho = "1.5.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroid = "0ebc385702"
+    const val unoxAndroid = "154ae7d032"
     const val unoxAndroidArch = "603b670e65"
 
     const val barista = "2.7.1"
