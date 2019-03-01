@@ -318,7 +318,7 @@ object Versions {
     const val unoxAndroid = "a0e7592838"
     const val unoxAndroidArch = "9588bc0fba"
 
-    const val barista = "2.7.1"
+    const val barista = "2.8.0"
     const val fixd = "1.0.3"
     const val kotlinAssertUtils = "0.8.2"
     const val mockK = "1.9.1"
