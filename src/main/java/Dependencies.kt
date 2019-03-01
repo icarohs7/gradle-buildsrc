@@ -216,6 +216,7 @@ object TestDeps {
     val core = listOf(
             "org.bigtesting:fixd:${Versions.fixd}",
             "org.koin:koin-test:${Versions.koin}",
+            "io.mockk:mockk:${Versions.mockK}",
             "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}"
     )
 
@@ -320,6 +321,7 @@ object Versions {
     const val barista = "2.7.1"
     const val fixd = "1.0.3"
     const val kotlinAssertUtils = "0.8.2"
+    const val mockK = "1.9.1"
     const val robolectric = "4.1"
     const val testCore = "1.1.0"
 
