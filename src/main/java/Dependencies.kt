@@ -123,8 +123,8 @@ object AndroidDeps {
     const val multiLineRadioGroup = "com.github.Gavras:MultiLineRadioGroup:${Versions.multiLineRadioGroup}"
     const val mural = "com.irozon.mural:mural:${Versions.mural}"
     const val mvRx = "com.airbnb.android:mvrx:${Versions.mvRx}"
-    const val navigationFragment = "android.arch.navigation:navigation-fragment-ktx:${Versions.navigation}"
-    const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val passcodeView = "in.arjsna:passcodeview:${Versions.passcodeView}"
     const val picasso = "com.squareup.picasso:picasso:${Versions.picasso}"
     const val playServicesGcm = "com.google.android.gms:play-services-gcm:${Versions.playServicesGcm}"
@@ -203,6 +203,8 @@ object AndroidDeps {
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
     const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
+    const val workManagerKtx = "android.arch.work:work-runtime-ktx:${Versions.workManager}"
+    const val workManagerRx = "android.arch.work:work-rxjava2:${Versions.workManager}"
 }
 
 object AndroidKaptDeps {
@@ -281,7 +283,7 @@ object Versions {
     const val multiLineRadioGroup = "1.0.0.6"
     const val mural = "1.0.1"
     const val mvRx = "0.7.2"
-    const val navigation = "1.0.0-rc02"
+    const val navigation = "2.0.0-rc02"
     const val okHttp = "3.13.1"
     const val okio = "2.2.2"
     const val passcodeView = "1.2.1"
@@ -316,7 +318,8 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "a0e7592838"
-    const val unoxAndroidArch = "439fafa12b"
+    const val unoxAndroidArch = "b6a27ac0f1"
+    const val workManager = "1.0.0"
 
     const val barista = "2.8.0"
     const val fixd = "1.0.3"

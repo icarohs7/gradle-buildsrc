@@ -20,7 +20,7 @@ object Plugins {
     const val navigationComponent = """
         buildscript {
             dependencies {
-                classpath("android.arch.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}")
+                classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}")
             }
         }
 
