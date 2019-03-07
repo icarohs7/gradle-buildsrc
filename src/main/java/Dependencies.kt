@@ -216,9 +216,10 @@ object AndroidKaptDeps {
 
 object TestDeps {
     val core = listOf(
+            "com.squareup.okhttp3:mockwebserver:${Versions.mockWebServer}",
+            "io.mockk:mockk:${Versions.mockK}",
             "org.bigtesting:fixd:${Versions.fixd}",
             "org.koin:koin-test:${Versions.koin}",
-            "io.mockk:mockk:${Versions.mockK}",
             "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}"
     )
 
@@ -280,6 +281,7 @@ object Versions {
     const val materialDialogs = "2.0.3"
     const val materialFabSpeedDial = "2.0.0-RC1"
     const val materialSpinner = "1.3.1"
+    const val mockWebServer = "3.13.1"
     const val multiLineRadioGroup = "1.0.0.6"
     const val mural = "1.0.1"
     const val mvRx = "0.7.2"
@@ -317,7 +319,7 @@ object Versions {
     const val stetho = "1.5.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroid = "a0e7592838"
+    const val unoxAndroid = "08f54adeca"
     const val unoxAndroidArch = "b6a27ac0f1"
     const val workManager = "1.0.0"
 
