@@ -320,7 +320,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "08f54adeca"
-    const val unoxAndroidArch = "b6a27ac0f1"
+    const val unoxAndroidArch = "0.31"
     const val workManager = "1.0.0"
 
     const val barista = "2.8.0"
