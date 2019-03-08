@@ -203,8 +203,8 @@ object AndroidDeps {
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
     const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
-    const val workManagerKtx = "android.arch.work:work-runtime-ktx:${Versions.workManager}"
-    const val workManagerRx = "android.arch.work:work-rxjava2:${Versions.workManager}"
+    const val workManagerKtx = "androidx.work:work-runtime-ktx:${Versions.workManager}"
+    const val workManagerRx = "androidx.work:work-rxjava2:${Versions.workManager}"
 }
 
 object AndroidKaptDeps {
@@ -321,7 +321,7 @@ object Versions {
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "08f54adeca"
     const val unoxAndroidArch = "0.31"
-    const val workManager = "1.0.0"
+    const val workManager = "2.0.0-rc01"
 
     const val barista = "2.8.0"
     const val fixd = "1.0.3"
