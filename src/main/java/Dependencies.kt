@@ -219,7 +219,7 @@ object AndroidKaptDeps {
 
 object TestDeps {
     val core = listOf(
-            "com.squareup.okhttp3:mockwebserver:${Versions.mockWebServer}",
+            "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
             "io.mockk:mockk:${Versions.mockK}",
             "org.bigtesting:fixd:${Versions.fixd}",
             "org.koin:koin-test:${Versions.koin}",
@@ -252,6 +252,7 @@ object Versions {
     const val appUpdater = "2.7"
     const val arrow = "0.8.2"
     const val bungee = "master-SNAPSHOT"
+    const val choreographer = "1.0.1"
     const val circularImageView = "1.3"
     const val constraintLayout = "1.1.3"
     const val coroutines = "1.1.1"
@@ -259,10 +260,10 @@ object Versions {
     const val currencyEditText = "2.0.2"
     const val disposer = "2.0.0"
     const val drawableToolbox = "1.0.7"
-    const val epoxy = "3.3.0"
+    const val epoxy = "3.3.1"
     const val expansionPanel = "1.2.2"
-    const val firebaseCore = "16.0.6"
-    const val firebaseMessaging = "17.3.4"
+    const val firebaseCore = "16.0.7"
+    const val firebaseMessaging = "17.4.0"
     const val flashBar = "1.0.3"
     const val fragment = "1.0.0"
     const val fuel = "2.0.0"
@@ -286,12 +287,11 @@ object Versions {
     const val materialDialogs = "2.0.3"
     const val materialFabSpeedDial = "2.0.0-RC1"
     const val materialSpinner = "1.3.1"
-    const val mockWebServer = "3.13.1"
     const val multiLineRadioGroup = "1.0.0.6"
     const val mural = "1.0.1"
     const val mvRx = "0.7.2"
-    const val navigation = "2.0.0-rc02"
-    const val okHttp = "3.13.1"
+    const val navigation = "2.0.0"
+    const val okHttp = "3.14.0"
     const val okio = "2.2.2"
     const val passcodeView = "1.2.1"
     const val picasso = "2.71828"
@@ -326,13 +326,13 @@ object Versions {
     const val tornadoFx = "1.7.17"
     const val viewAnimator = "1.1.1"
     const val unoxAndroid = "08f54adeca"
-    const val unoxAndroidArch = "d15d04e2a8"
+    const val unoxAndroidArch = "d436615327"
     const val workManager = "2.0.0-rc01"
 
-    const val barista = "2.8.0"
-    const val fixd = "1.0.3"
+    const val barista = "2.9.0"
+    const val fixd = "1.0.5"
     const val kotlinAssertUtils = "0.8.2"
-    const val mockK = "1.9.1"
+    const val mockK = "1.9.2"
     const val robolectric = "4.1"
     const val testCore = "1.1.0"
 
