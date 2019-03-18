@@ -42,6 +42,7 @@ object Deps {
     const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
     const val snakeYaml = "org.yaml:snakeyaml:${Versions.snakeYaml}"
+    const val threeTenBp = "org.threeten:threetenbp:${Versions.threeTenBp}"
 }
 
 object JavaFxDeps {
@@ -104,6 +105,7 @@ object AndroidDeps {
     const val flashbar = "com.andrognito.flashbar:flashbar:${Versions.flashBar}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    const val horizontalBarGraph = "com.github.felixsoares:HorizontalBarGraph:${Versions.horizontalBarGraph}"
     const val inputMask = "com.redmadrobot:inputmask:${Versions.inputMask}"
     const val kFormMaster = "com.thejuki:k-form-master:${Versions.kFormMaster}"
     const val kidAdapter = "com.link184:kid-adapter:${Versions.kidAdapter}"
@@ -269,6 +271,7 @@ object Versions {
     const val fuel = "2.0.0"
     const val glide = "4.8.0"
     const val gson = "2.8.5"
+    const val horizontalBarGraph = "1.1"
     const val ikonli = "11.1.0"
     const val inputMask = "4.0.0"
     const val jsonIter = "0.9.23"
@@ -322,11 +325,12 @@ object Versions {
     const val spotsdialog = "1.1"
     const val stateViews = "0.5"
     const val stetho = "1.5.0"
+    const val threeTenBp = "1.3.8"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val viewAnimator = "1.1.1"
     const val unoxAndroid = "f3e6a5bdef"
-    const val unoxAndroidArch = "74f8c929b4"
+    const val unoxAndroidArch = "812b97301b"
     const val workManager = "2.0.0-rc01"
 
     const val barista = "2.9.0"
