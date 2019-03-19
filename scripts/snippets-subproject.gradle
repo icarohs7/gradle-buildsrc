@@ -9,7 +9,8 @@ plugins {
 apply(from: androidCommonSettings)
 android {
     defaultConfig {
-        manifestPlaceholders = [facebookAppId: ""]
+        versionCode(1)
+        versionName("1.0")
     }
 }
 
