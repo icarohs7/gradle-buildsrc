@@ -296,7 +296,7 @@ object Versions {
     const val lives = "1.2.1"
     const val maskEditText = "1.1.1"
     const val materialDesign = "1.0.0"
-    const val materialDialogs = "2.3.0"
+    const val materialDialogs = "2.5.0"
     const val materialEditText = "2.1.4"
     const val materialFabSpeedDial = "2.0.0-RC1"
     const val materialSpinner = "1.3.1"
@@ -345,7 +345,7 @@ object Versions {
     const val barista = "2.9.0"
     const val fixd = "1.0.5"
     const val kotlinAssertUtils = "0.8.2"
-    const val mockK = "1.9.2"
+    const val mockK = "1.9.3"
     const val robolectric = "4.1"
     const val testCore = "1.1.0"
 
