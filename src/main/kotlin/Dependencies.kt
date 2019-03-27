@@ -84,6 +84,7 @@ object JavaFxDeps {
 }
 
 object AndroidDeps {
+    const val androidSpeedDial = "com.leinardi.android:speed-dial:${Versions.androidSpeedDial}"
     const val androidxPreference = "androidx.preference:preference-ktx:${Versions.preferenceKtx}"
     const val ankoCommons = "org.jetbrains.anko:anko-commons:${Versions.anko}"
     const val ankoSdk25 = "org.jetbrains.anko:anko-sdk25:${Versions.anko}"
@@ -127,6 +128,10 @@ object AndroidDeps {
     const val materialDialogsFiles = "com.afollestad.material-dialogs:files:${Versions.materialDialogs}"
     const val materialDialogsInput = "com.afollestad.material-dialogs:input:${Versions.materialDialogs}"
     const val materialDialogsLifecycle = "com.afollestad.material-dialogs:lifecycle:${Versions.materialDialogs}"
+    const val materialDrawer = "com.mikepenz:materialdrawer:${Versions.materialDrawer}"
+    const val materialDrawerKt = "co.zsmb:materialdrawer-kt:${Versions.materialDrawerKt}"
+    const val materialDrawerMaterialTypeface = "com.mikepenz:material-design-iconic-typeface:${Versions.materialDrawerMaterialTypeface}@aar"
+    const val materialDrawerMaterialTypefaceOriginal = "com.mikepenz:google-material-typeface:${Versions.materialDrawerMaterialTypefaceOriginal}@aar"
     const val materialEditText = "com.rengwuxian.materialedittext:library:${Versions.materialEditText}"
     const val materialFabSpeedDial = "com.github.kobakei:MaterialFabSpeedDial:${Versions.materialFabSpeedDial}"
     const val materialSpinner = "com.jaredrummler:material-spinner:${Versions.materialSpinner}"
@@ -253,6 +258,7 @@ object AndroidTestDeps {
 }
 
 object Versions {
+    const val androidSpeedDial = "2.0.1"
     const val androidxcore = "1.0.1"
     const val anko = "0.10.8"
     const val anotherViewPager = "1.0.2"
@@ -260,7 +266,7 @@ object Versions {
     const val appUpdater = "2.7"
     const val arrow = "0.8.2"
     const val bungee = "master-SNAPSHOT"
-    const val circularImageView = "1.3"
+    const val circularImageView = "1.4"
     const val clikt = "1.7.0"
     const val constraintLayout = "1.1.3"
     const val coroutines = "1.1.1"
@@ -296,7 +302,11 @@ object Versions {
     const val lives = "1.2.1"
     const val maskEditText = "1.1.1"
     const val materialDesign = "1.0.0"
-    const val materialDialogs = "2.5.0"
+    const val materialDialogs = "2.6.0"
+    const val materialDrawer = "6.1.2"
+    const val materialDrawerMaterialTypeface = "2.2.0.5"
+    const val materialDrawerMaterialTypefaceOriginal = "3.0.1.3.original"
+    const val materialDrawerKt = "2.0.1"
     const val materialEditText = "2.1.4"
     const val materialFabSpeedDial = "2.0.0-RC1"
     const val materialSpinner = "1.3.1"
@@ -322,7 +332,7 @@ object Versions {
     const val room = "2.1.0-alpha04"
     const val rxAndroid = "2.1.0"
     const val rxBinding = "3.0.0-alpha2"
-    const val rxJava = "2.2.7"
+    const val rxJava = "2.2.8"
     const val rxKotlin = "2.3.0"
     const val rxPermissions = "0.7.0"
     const val rxRelay = "2.1.0"
@@ -338,14 +348,14 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "fa609db7d4"
-    const val unoxAndroidArch = "50aae47d99"
+    const val unoxAndroidArch = "ca8c4c61fc"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.0"
 
     const val barista = "2.9.0"
     const val fixd = "1.0.5"
     const val kotlinAssertUtils = "0.8.2"
-    const val mockK = "1.9.3"
+    const val mockK = "1.9.2"
     const val robolectric = "4.1"
     const val testCore = "1.1.0"
 
