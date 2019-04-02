@@ -8,8 +8,9 @@ plugins {
 }
 
 android {
+    defaultSettings()
     defaultConfig {
-        applicationId = "pro.sige.sigepessoal"
+        applicationId = "com.company.appname"
         versionCode = 1
         versionName = "1.00"
     }
