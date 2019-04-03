@@ -4,6 +4,7 @@ plugins {
     id("jacoco")
     id("maven-publish")
     id("com.jfrog.bintray") version "1.8.4"
+    id("com.github.b3er.local.properties") version "1.1"
 }
 
 with(project) {
