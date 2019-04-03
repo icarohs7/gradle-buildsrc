@@ -223,7 +223,6 @@ object AndroidDeps {
     const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     const val stickyTimelineView = "com.github.sangcomz:StickyTimeLine:${Versions.stickyTimelineView}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
-    const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
     const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
     const val unoxCoreAndroid = "com.github.icarohs7:unoxcore-android:${Versions.unoxCore}"
     const val viewAnimator = "com.github.florent37:viewanimator:${Versions.viewAnimator}"
@@ -362,9 +361,8 @@ object Versions {
     const val stickyTimelineView = "v0.0.20"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroid = "fa609db7d4"
     const val unoxAndroidArch = "f7cab1cff7"
-    const val unoxCore = "3.00"
+    const val unoxCore = "3.00-next.1"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.0"
 
