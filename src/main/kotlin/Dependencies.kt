@@ -1,5 +1,9 @@
 @file:Suppress("PublicApiImplicitType", "MemberVisibilityCanBePrivate", "unused")
 
+object CommonDeps {
+    const val coroutinesCoreCommon = "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:${Versions.coroutines}"
+}
+
 object Deps {
     const val arrowCore = "io.arrow-kt:arrow-core:${Versions.arrow}"
     const val arrowData = "io.arrow-kt:arrow-data:${Versions.arrow}"
@@ -45,6 +49,7 @@ object Deps {
     const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
     const val snakeYaml = "org.yaml:snakeyaml:${Versions.snakeYaml}"
+    const val unoxCoreJvm = "com.github.icarohs7:unoxcore-jvm:${Versions.unoxCore}"
 }
 
 object JavaFxDeps {
@@ -219,6 +224,7 @@ object AndroidDeps {
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroid = "com.github.icarohs7:unox-android:${Versions.unoxAndroid}"
     const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
+    const val unoxCoreAndroid = "com.github.icarohs7:unoxcore-android:${Versions.unoxCore}"
     const val viewAnimator = "com.github.florent37:viewanimator:${Versions.viewAnimator}"
     const val workManagerKtx = "androidx.work:work-runtime-ktx:${Versions.workManager}"
     const val workManagerRx = "androidx.work:work-rxjava2:${Versions.workManager}"
@@ -256,6 +262,11 @@ object AndroidTestDeps {
 
     const val barista = "com.schibsted.spain:barista:${Versions.barista}"
     const val testOrchestrator = "androidx.test:orchestrator:${Versions.testRules}"
+}
+
+object JSDeps {
+    const val coroutinesJs = "org.jetbrains.kotlinx:kotlinx-coroutines-core-js:${Versions.coroutines}"
+    const val unoxCoreAndroid = "com.github.icarohs7:unoxcore-js:${Versions.unoxCore}"
 }
 
 object Versions {
@@ -351,6 +362,7 @@ object Versions {
     const val tornadoFx = "1.7.17"
     const val unoxAndroid = "fa609db7d4"
     const val unoxAndroidArch = "f7cab1cff7"
+    const val unoxCore = "3.00"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.0"
 
