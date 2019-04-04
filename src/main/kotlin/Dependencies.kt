@@ -361,7 +361,7 @@ object Versions {
     const val stickyTimelineView = "v0.0.20"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroidArch = "f7cab1cff7"
+    const val unoxAndroidArch = "9afdde32b5"
     const val unoxCore = "3.00-next.1"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.0"
