@@ -124,6 +124,7 @@ object AndroidDeps {
     const val kotprefGson = "com.chibatching.kotpref:gson-support:${Versions.kotpref}"
     const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
     const val lifecycleReactiveStreamsKtx = "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.lifecycle}"
+    const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val lightCalendarView = "jp.co.recruit_mp:LightCalendarView:${Versions.lightCalendarView}"
     const val lives = "com.snakydesign.livedataextensions:lives:${Versions.lives}"
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
@@ -172,7 +173,7 @@ object AndroidDeps {
     const val rxBindingSwipeRefreshLayout = "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:${Versions.rxBinding}"
     const val rxBindingViewPager = "com.jakewharton.rxbinding3:rxbinding-viewpager:${Versions.rxBinding}"
     const val rxPermission = "com.github.vanniktech:RxPermission:${Versions.rxPermissions}"
-    const val simpleAuth = "com.jaychang:simpleauth-facebook:${Versions.simpleAuthFacebook}"
+    const val simpleAuthFacebook = "com.jaychang:simpleauth-facebook:${Versions.simpleAuthFacebook}"
     const val simpleBarcodeScanner = "com.github.bobekos:SimpleBarcodeScanner:${Versions.simpleBarcodeScanner}"
     const val smartScheduler = "io.hypertrack:smart-scheduler:${Versions.smartScheduler}"
     const val spinKit = "com.github.ybq:Android-SpinKit:${Versions.spinkit}"
@@ -222,6 +223,7 @@ object AndroidDeps {
     const val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
     const val stethoOkHttp = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     const val stickyTimelineView = "com.github.sangcomz:StickyTimeLine:${Versions.stickyTimelineView}"
+    const val textViewDotsAnimation = "com.github.rajputkapil:textviewdotsanimation:${Versions.textViewDotsAnimation}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val unoxAndroidArch = "com.github.icarohs7:unox-android-arch:${Versions.unoxAndroidArch}"
     const val unoxCoreAndroid = "com.github.icarohs7:unoxcore-android:${Versions.unoxCore}"
@@ -235,6 +237,8 @@ object AndroidKaptDeps {
             "androidx.room:room-compiler:${Versions.room}",
             "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
     )
+
+    const val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
 }
 
 object TestDeps {
@@ -359,9 +363,10 @@ object Versions {
     const val stateViews = "0.5"
     const val stetho = "1.5.1"
     const val stickyTimelineView = "v0.0.20"
+    const val textViewDotsAnimation = "v1.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroidArch = "d71b2fe3a5"
+    const val unoxAndroidArch = "5cf83f2be0"
     const val unoxCore = "3.00-next.1"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.0"

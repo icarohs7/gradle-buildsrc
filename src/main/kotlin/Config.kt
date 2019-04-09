@@ -6,6 +6,7 @@ import org.gradle.kotlin.dsl.PluginDependenciesSpecScope as PluginsBlock
 fun AndroidBlock.defaultSettings() {
     compileSdkVersion(28)
 
+    facebookAppId = ""
     defaultConfig {
         minSdkVersion(21)
         targetSdkVersion(28)
@@ -47,3 +48,9 @@ fun AndroidBlock.defaultSettings() {
         pickFirst("META-INF/lib_release.kotlin_module")
     }
 }
+
+var AndroidBlock.facebookAppId: String
+    get() = defaultConfig.manifestPlaceholders["facebookAppId"]?.toString().orEmpty()
+    set(value) {
+        defaultConfig.manifestPlaceholders["facebookAppId"] = value
+    }
