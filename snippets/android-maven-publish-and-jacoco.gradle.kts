@@ -1,75 +1,66 @@
-import com.jfrog.bintray.gradle.BintrayExtension
-
 plugins {
+    kotlin("multiplatform")
+    id("com.android.library")
     id("jacoco")
     id("maven-publish")
-    id("com.jfrog.bintray") version "1.8.4"
+    id("com.jfrog.bintray")
     id("com.github.b3er.local.properties") version "1.1"
+    defaults.`android-module`
 }
 
-with(project) {
-    group = "com.github.icarohs7"
-    version = "3.00"
-    description = "Library aggregating extensions, utility functions and some QOL features"
+android {
+    defaultSettings()
+    sourceSets["main"].java.srcDir("src/main/kotlin")
+    sourceSets["test"].java.srcDir("src/test/kotlin")
+
+    dataBinding {
+        isEnabled = false
+    }
 }
 
-jacoco {
-    toolVersion = "0.8.3"
-}
+kotlin {
+    metadata { mavenPublication { artifactId = "unoxcore-android-metadata" } }
 
-tasks {
-    withType<Test> {
-        extensions.getByType<JacocoTaskExtension>().setIncludeNoLocationClasses(true)
+    android {
+        mavenPublication { artifactId = "unoxcore-android" }
+        publishLibraryVariants("debug")
     }
 
-    create<JacocoReport>("jacocoTestReport") {
-        dependsOn("testDebugUnitTest", "check", "createDebugCoverageReport")
-
-        this.group = "Reporting"
-        this.description = "Generate Jacoco coverage reports for Debug build"
-
-        reports {
-            xml.isEnabled = true
-            html.isEnabled = true
+    @Suppress("UNUSED_VARIABLE")
+    sourceSets {
+        val androidMain by getting {
+            kotlin.srcDir("src/main/kotlin")
+            dependencies {
+                api(project(":jvm"))
+                api(AndroidDeps.appCompat)
+                api(AndroidDeps.coreKtx)
+                api(AndroidDeps.coroutinesAndroid)
+                api(AndroidDeps.disposer)
+                api(AndroidDeps.lifecycleExtensions)
+                api(AndroidDeps.lives)
+                api(AndroidDeps.rxAndroid)
+            }
         }
 
-        val excludes = listOf(
-                "**/R.class",
-                "**/R\$*.class",
-                "**/*\$ViewInjector*.*",
-                "**/BuildConfig.*",
-                "**/Manifest*.*",
-                "**/*Test*.*",
-                "android/**/*.*"
-        )
-
-        classDirectories.setFrom(
-                fileTree("$buildDir/intermediates/classes/debug") { exclude(excludes) },
-                fileTree("$buildDir/tmp/kotlin-classes/debug") { exclude(excludes) }
-        )
-        sourceDirectories.setFrom(files(
-                android.sourceSets["main"].java.srcDirs,
-                "src/main/kotlin"
-        ))
-
-        executionData("$buildDir/jacoco/testDebugUnitTest.exec")
-        executionData("$buildDir/jacoco/jvmTest.exec")
+        val androidTest by getting {
+            dependsOn(androidMain)
+            kotlin.srcDir("src/test/kotlin")
+            dependencies {
+                TestDeps.androidCore.forEach {
+                    implementation(it) {
+                        exclude(group = "org.apache.maven")
+                    }
+                }
+            }
+        }
     }
 }
 
-fun findProperty(s: String) = project.findProperty(s) as String?
-bintray {
-    user = findProperty("bintrayUser")
-    key = findProperty("bintrayApiKey")
-    publish = true
-    setPublications("js", "jvm", "androidDebug")
-    pkg(delegateClosureOf<BintrayExtension.PackageConfig> {
-        repo = "libraries"
-        name = "unox-core"
-        githubRepo = "icarohs7/unox-core"
-        vcsUrl = "https://github.com/icarohs7/unox-core.git"
-        setLabels("kotlin")
-        setLicenses("MIT")
-        desc = description
-    })
+setupJacoco {
+    sourceDirectories.setFrom(files(
+            android.sourceSets["main"].java.srcDirs,
+            "src/main/kotlin"
+    ))
 }
+
+setupBintrayPublish(bintray, "metadata", "androidDebug")

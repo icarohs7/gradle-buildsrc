@@ -1,7 +1,5 @@
 import org.gradle.api.JavaVersion
 import com.android.build.gradle.TestedExtension as AndroidBlock
-import org.gradle.api.artifacts.dsl.DependencyHandler as DependenciesBlock
-import org.gradle.kotlin.dsl.PluginDependenciesSpecScope as PluginsBlock
 
 fun AndroidBlock.defaultSettings() {
     compileSdkVersion(28)
@@ -16,6 +14,9 @@ fun AndroidBlock.defaultSettings() {
     }
 
     buildTypes {
+        getByName("debug") {
+            isTestCoverageEnabled = true
+        }
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
