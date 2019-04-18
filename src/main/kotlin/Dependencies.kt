@@ -386,7 +386,7 @@ object Versions {
     const val jacoco = "0.8.3"
     const val kotlinAssertUtils = "0.8.2"
     const val mockK = "1.9.2"
-    const val robolectric = "4.1"
+    const val robolectric = "4.2.1"
     const val testCore = "1.1.0"
 
     const val espresso = "3.1.1"
