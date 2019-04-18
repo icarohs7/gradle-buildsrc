@@ -11,7 +11,7 @@ import org.gradle.testing.jacoco.tasks.JacocoReport
 
 fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = tasks {
     configure<JacocoPluginExtension> {
-        toolVersion = "0.8.3"
+        toolVersion = Versions.jacoco
     }
 
     withType<Test> {
@@ -35,22 +35,17 @@ fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = 
     }
 }.let { Unit }
 
-fun Project.setupJacoco(block: JacocoReport.() -> Unit = {}) {
+fun Project.setupJacoco(block: JacocoReport.() -> Unit = {}): Unit = tasks {
     configure<JacocoPluginExtension> {
-        toolVersion = "0.8.3"
+        toolVersion = Versions.jacoco
     }
 
-    tasks.withType<Test> {
+    withType<Test> {
         extensions.getByType<JacocoTaskExtension>().setIncludeNoLocationClasses(true)
     }
 
-    val jacocoTask = when (getTasksByName("jacocoTestReport", false).isNotEmpty()) {
-        true -> tasks.getByName("jacocoTestReport")
-        false -> tasks.create("jacocoTestReport")
-    } as? JacocoReport ?: return
-
-    with(jacocoTask) {
-        val getTasks = { names: List<String> -> names.flatMap { name -> getTasksByName(name, false) } }
+    create<JacocoReport>("jacocoTestReport") {
+        val getTasks = { names: List<String> -> names.flatMap { name -> getTasksByName(name, true) } }
         dependsOn(getTasks(listOf("testDebugUnitTest", "check", "createDebugCoverageReport")))
 
         this.group = "Reporting"
@@ -83,4 +78,4 @@ fun Project.setupJacoco(block: JacocoReport.() -> Unit = {}) {
 
         block()
     }
-}
+}.let { Unit }

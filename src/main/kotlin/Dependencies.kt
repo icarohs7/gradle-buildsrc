@@ -248,7 +248,6 @@ object AndroidKaptDeps {
 
 object TestDeps {
     val core = listOf(
-            "org.jacoco:org.jacoco.core:${Versions.jacoco}",
             "org.jacoco:org.jacoco.agent:0.7.9:runtime",
             "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
             "io.mockk:mockk:${Versions.mockK}",
