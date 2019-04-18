@@ -375,7 +375,7 @@ object Versions {
     const val textViewDotsAnimation = "v1.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
-    const val unoxAndroidArch = "470ee57478"
+    const val unoxAndroidArch = "8927f12977"
     const val unoxCore = "3.02"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.1"
