@@ -4,7 +4,7 @@ import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
-fun AndroidBlock.defaultSettings() {
+fun AndroidBlock.defaultSettings(project: Project? = null) {
     sourceSets["main"].java.srcDir("src/main/kotlin")
     sourceSets["test"].java.srcDir("src/test/kotlin")
 
@@ -21,7 +21,7 @@ fun AndroidBlock.defaultSettings() {
 
     buildTypes {
         getByName("debug") {
-            isTestCoverageEnabled = true
+            isTestCoverageEnabled = project?.hasProperty("coverage") == true
         }
         getByName("release") {
             isMinifyEnabled = false
