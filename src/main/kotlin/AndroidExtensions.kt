@@ -48,6 +48,7 @@ fun AndroidBlock.defaultSettings() {
 
     lintOptions {
         isAbortOnError = false
+        isCheckReleaseBuilds = false
     }
 
     packagingOptions {
