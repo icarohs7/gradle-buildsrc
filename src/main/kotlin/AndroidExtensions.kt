@@ -68,7 +68,7 @@ fun AndroidBlock.addReleaseCertificate(
 ) {
     signingConfigs {
         create("release") {
-            this.storeFile = File("${project.rootProject.rootDir}/$storeFilePath.jks")
+            this.storeFile = File("${project.rootProject.rootDir}/$storeFilePath")
             this.storePassword = storePassword
             this.keyAlias = keyAlias
             this.keyPassword = keyPassword
