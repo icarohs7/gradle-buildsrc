@@ -8,6 +8,7 @@ allprojects {
         maven("https://kotlin.bintray.com/kotlinx")
         mavenCentral()
         jcenter()
+        maven("https://dl.bintray.com/icarohs7/libraries")
         maven("https://jitpack.io")
     }
 }
