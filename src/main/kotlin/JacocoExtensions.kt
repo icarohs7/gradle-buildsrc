@@ -32,6 +32,8 @@ fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = 
             xml.isEnabled = true
             html.isEnabled = true
         }
+
+        block()
     }
 }.let { Unit }
 
