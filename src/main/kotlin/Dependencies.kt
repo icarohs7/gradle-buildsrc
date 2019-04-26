@@ -38,7 +38,7 @@ object Deps {
     const val khronos = "com.github.hotchemi:khronos:${Versions.khronos}"
     const val kodaTime = "com.github.debop:koda-time:${Versions.kodaTime}"
     const val koinCore = "org.koin:koin-core:${Versions.koin}"
-    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+    const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val kotlinxSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
@@ -382,7 +382,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.17"
     const val unoxAndroidArch = "0.40-next.4"
-    const val unoxCore = "3.02-next.2"
+    const val unoxCore = "3.02-next.3"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.0.1"
 
