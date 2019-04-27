@@ -1,5 +1,9 @@
+import groovy.lang.Closure
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
+import org.gradle.api.tasks.testing.Test
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.TestedExtension as AndroidBlock
@@ -43,6 +47,15 @@ fun AndroidBlock.defaultSettings(project: Project? = null) {
         unitTests.apply {
             isIncludeAndroidResources = true
             isReturnDefaultValues = true
+            all(object : Closure<Test>(this, this) {
+                @Suppress("unused") // Called by groovy's dark magic
+                fun doCall(test: Test): Unit = with(test) {
+                    testLogging {
+                        events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
+                        exceptionFormat = TestExceptionFormat.FULL
+                    }
+                }
+            })
         }
     }
 

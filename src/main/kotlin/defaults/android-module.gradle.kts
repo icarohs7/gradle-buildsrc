@@ -1,5 +1,8 @@
 package defaults
 
+import AndroidTestDeps
+import TestDeps
+
 dependencies {
     val add = { type: String, dependencies: List<String> -> dependencies.forEach { add(type, it) } }
 
