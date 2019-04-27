@@ -330,7 +330,7 @@ object Versions {
     const val lightCalendarView = "1.0.1"
     const val lives = "1.3.0"
     const val maskEditText = "1.1.1"
-    const val materialDesign = "1.0.0"
+    const val materialDesign = "1.1.0-alpha05"
     const val materialDialogs = "2.8.1"
     const val materialDrawer = "6.1.2"
     const val materialDrawerKt = "2.0.1"
