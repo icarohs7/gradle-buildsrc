@@ -325,7 +325,7 @@ object Versions {
     const val koin = "2.0.0-rc-3"
     const val kotlin = "1.3.31"
     const val kotlinxSerialization = "0.11.0"
-    const val kotpref = "2.6.0"
+    const val kotpref = "2.8.0"
     const val lifecycle = "2.0.0"
     const val lightCalendarView = "1.0.1"
     const val lives = "1.3.0"
