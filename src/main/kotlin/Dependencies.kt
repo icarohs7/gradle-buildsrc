@@ -303,7 +303,7 @@ object Versions {
     const val firebaseMessaging = "17.4.0"
     const val flashBar = "1.0.3"
     const val floatingSearchView = "2.1.1"
-    const val fragment = "1.0.0"
+    const val fragment = "1.1.0-alpha08"
     const val fuel = "2.0.0"
     const val glide = "4.8.0"
     const val googlePlayCore = "1.5.0"
