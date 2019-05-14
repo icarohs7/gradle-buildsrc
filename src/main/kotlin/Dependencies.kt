@@ -130,6 +130,7 @@ object AndroidDeps {
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
     const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
     const val materialDialogs = "com.afollestad.material-dialogs:core:${Versions.materialDialogs}"
+    const val materialDialogsBottomSheets = "com.afollestad.material-dialogs:bottomsheets:${Versions.materialDialogs}"
     const val materialDialogsColor = "com.afollestad.material-dialogs:color:${Versions.materialDialogs}"
     const val materialDialogsDateTime = "com.afollestad.material-dialogs:datetime:${Versions.materialDialogs}"
     const val materialDialogsFiles = "com.afollestad.material-dialogs:files:${Versions.materialDialogs}"
