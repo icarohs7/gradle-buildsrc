@@ -13,6 +13,6 @@ allprojects {
     }
 }
 
-task<Delete>("clean") {
-    delete(rootProject.buildDir)
+tasks.maybeCreate<Delete>("clean").apply {
+    doLast { delete(rootProject.buildDir) }
 }

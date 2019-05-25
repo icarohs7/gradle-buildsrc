@@ -379,7 +379,7 @@ object Versions {
     const val swipeRevealLayout = "1.4.1"
     const val textViewDotsAnimation = "v1.0"
     const val timber = "4.7.1"
-    const val tornadoFx = "1.7.17"
+    const val tornadoFx = "1.7.19"
     const val unoxAndroidArch = "0.51-next.1"
     const val unoxCore = "3.02-next.5"
     const val viewAnimator = "1.1.1"
