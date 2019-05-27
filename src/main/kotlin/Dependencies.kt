@@ -84,6 +84,7 @@ object JavaFxDeps {
     const val ikonliWeathericons = "org.kordamp.ikonli:ikonli-weathericons-pack:${Versions.ikonli}"
     const val ikonliWebsymbols = "org.kordamp.ikonli:ikonli-websymbols-pack:${Versions.ikonli}"
     const val ikonliZondicons = "org.kordamp.ikonli:ikonli-zondicons-pack:${Versions.ikonli}"
+    const val jFoenix = "com.jfoenix:jfoenix:${Versions.jFoenix}"
     const val tornadoFx = "no.tornado:tornadofx:${Versions.tornadoFx}"
 }
 
@@ -318,8 +319,9 @@ object Versions {
     const val googlePlayServicesPlaces = "16.0.0"
     const val gson = "2.8.5"
     const val helloCharts = "v1.5.8"
-    const val ikonli = "11.1.0"
+    const val ikonli = "2.4.0"
     const val inputMask = "4.0.0"
+    const val jFoenix = "8.0.8"
     const val jodaTime = "2.10.2"
     const val kaml = "0.8.0"
     const val kFormMaster = "6.1.1"
