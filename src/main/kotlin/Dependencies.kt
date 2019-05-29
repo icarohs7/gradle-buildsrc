@@ -333,7 +333,7 @@ object Versions {
     const val khronos = "0.9.0"
     const val kidAdapter = "1.1.5"
     const val kodaTime = "2.0.0"
-    const val koin = "2.0.0"
+    const val koin = "2.0.1"
     const val kotlin = "1.3.31"
     const val kotlinxSerialization = "0.11.0"
     const val kotpref = "2.8.0"
