@@ -398,6 +398,6 @@ object Versions {
     const val robolectric = "4.2.1"
     const val testCore = "1.2.0"
 
-    const val espresso = "3.2.0-beta01"
-    const val testRules = "1.2.0-beta01"
+    const val espresso = "3.2.0"
+    const val testRules = "1.2.0"
 }
