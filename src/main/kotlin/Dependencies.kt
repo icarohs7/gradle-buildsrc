@@ -366,7 +366,7 @@ object Versions {
     const val room = "2.1.0-rc01"
     const val rxAndroid = "2.1.1"
     const val rxBinding = "3.0.0-alpha2"
-    const val rxJava = "2.2.8"
+    const val rxJava = "2.2.9"
     const val rxKotlin = "2.3.0"
     const val rxPermissions = "0.7.0"
     const val rxRelay = "2.1.0"
@@ -396,7 +396,7 @@ object Versions {
     const val kotlinAssertUtils = "0.9.0"
     const val mockK = "1.9.2"
     const val robolectric = "4.2.1"
-    const val testCore = "1.2.0-beta01"
+    const val testCore = "1.2.0"
 
     const val espresso = "3.2.0-beta01"
     const val testRules = "1.2.0-beta01"
