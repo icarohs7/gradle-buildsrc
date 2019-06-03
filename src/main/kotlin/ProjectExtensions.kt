@@ -5,3 +5,5 @@ import org.gradle.kotlin.dsl.PluginDependenciesSpecScope as PluginsBlock
 
 
 fun Project.findProp(s: String) = project.findProperty(s) as String
+
+fun Project.uniqueName(rootProject: Project): String = "${rootProject.name}$path"
