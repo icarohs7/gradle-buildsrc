@@ -12,12 +12,12 @@ fun AndroidBlock.defaultSettings(project: Project? = null) {
     sourceSets["main"].java.srcDir("src/main/kotlin")
     sourceSets["test"].java.srcDir("src/test/kotlin")
 
-    compileSdkVersion(28)
+    compileSdkVersion(29)
 
     facebookAppId = ""
     defaultConfig {
         minSdkVersion(21)
-        targetSdkVersion(28)
+        targetSdkVersion(29)
         testInstrumentationRunnerArguments.plusAssign("clearPackageData" to "true")
         versionCode = 1
         versionName = "1.0"
