@@ -1,7 +1,8 @@
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
+import org.jetbrains.kotlin.gradle.plugin.mpp.AbstractKotlinTarget
 
-fun KotlinMultiplatformExtension.setupMetaInfoName(rootProject: Project, project: Project) {
+fun KotlinMultiplatformExtension.setupMetaInfoNameOnAll(rootProject: Project, project: Project) {
     targets.all {
         compilations.all {
             val fileName = "${rootProject.name}${project.path}".replace(":", "_")
@@ -23,5 +24,12 @@ fun KotlinMultiplatformExtension.setupAndroidTarget(
         mavenPublication { this.artifactId = artifactId }
         publishLibraryVariants("debug")
         compilations.all { kotlinOptions.jvmTarget = "1.6" }
+    }
+}
+
+fun AbstractKotlinTarget.setupMetaInfoName(rootProject: Project, project: Project) {
+    compilations.all {
+        val fileName = "${rootProject.name}${project.path}".replace(":", "_")
+        kotlinOptions.freeCompilerArgs += listOf("-module-name", fileName)
     }
 }
