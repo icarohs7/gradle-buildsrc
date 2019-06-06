@@ -292,10 +292,10 @@ object JSDeps {
 
 object Versions {
     const val androidSpeedDial = "2.0.1"
-    const val androidxCore = "1.1.0-beta01"
+    const val androidxCore = "1.1.0-rc01"
     const val anko = "0.10.8"
     const val anotherViewPager = "1.0.2"
-    const val appCompat = "1.1.0-alpha05"
+    const val appCompat = "1.1.0-beta01"
     const val arrow = "0.9.0"
     const val bluetoothKit = "0.3.1"
     const val bungee = "master-SNAPSHOT"
