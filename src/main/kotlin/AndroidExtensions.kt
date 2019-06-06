@@ -69,7 +69,7 @@ fun AndroidBlock.defaultSettings(project: Project? = null) {
         pickFirst("META-INF/lib_release.kotlin_module")
         pickFirst("META-INF/atomicfu.kotlin_module")
         pickFirst("META-INF/kotlinx-coroutines-core.kotlin_module")
-        pickFirst("META-INF/shared.kotlin_module")
+        pickFirst("META-INF/unox-core_shared.kotlin_module")
     }
 }
 
