@@ -242,6 +242,8 @@ object AndroidDeps {
     const val unoxAndroidArchCore = "com.github.icarohs7:unox-android-arch-core:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchLocation = "com.github.icarohs7:unox-android-arch-location:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchScheduling = "com.github.icarohs7:unox-android-arch-scheduling:${Versions.unoxAndroidArch}"
+    const val unoxAndroidArchBenchmark = "com.github.icarohs7:unox-android-arch-benchmark:${Versions.unoxAndroidArch}"
+    const val unoxAndroidArchSpinner = "com.github.icarohs7:unox-android-arch-spinner:${Versions.unoxAndroidArch}"
     const val unoxCoreAndroid = "com.github.icarohs7:unoxcore-android:${Versions.unoxCore}"
     const val viewAnimator = "com.github.florent37:viewanimator:${Versions.viewAnimator}"
     const val workManagerKtx = "androidx.work:work-runtime-ktx:${Versions.workManager}"
