@@ -7,6 +7,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.TestedExtension as AndroidBlock
+import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 
 fun AndroidBlock.defaultSettings(project: Project? = null) {
     sourceSets["main"].java.srcDir("src/main/kotlin")
@@ -101,3 +102,12 @@ var AndroidBlock.facebookAppId: String
     set(value) {
         defaultConfig.manifestPlaceholders["facebookAppId"] = value
     }
+
+fun AndroidApplicationBlock.enableProguard() {
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = true
+            isShrinkResources = true
+        }
+    }
+}
