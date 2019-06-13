@@ -91,6 +91,7 @@ object JavaFxDeps {
 
 object AndroidDeps {
     const val androidSpeedDial = "com.leinardi.android:speed-dial:${Versions.androidSpeedDial}"
+    const val androidToggle = "com.github.angads25:toggle:${Versions.androidToggle}"
     const val androidxPreference = "androidx.preference:preference-ktx:${Versions.preferenceKtx}"
     const val ankoCommons = "org.jetbrains.anko:anko-commons:${Versions.anko}"
     const val ankoSdk25 = "org.jetbrains.anko:anko-sdk25:${Versions.anko}"
@@ -294,6 +295,7 @@ object JSDeps {
 
 object Versions {
     const val androidSpeedDial = "2.0.1"
+    const val androidToggle = "1.1.0"
     const val androidxCore = "1.1.0-rc01"
     const val anko = "0.10.8"
     const val anotherViewPager = "1.0.2"
@@ -369,7 +371,7 @@ object Versions {
     const val recyclerView = "1.0.0"
     const val retrofit = "2.6.0"
     const val retrofitKotlinxSerializationConverter = "0.4.0"
-    const val room = "2.1.0-rc01"
+    const val room = "2.1.0"
     const val rxAndroid = "2.1.1"
     const val rxBinding = "3.0.0-alpha2"
     const val rxJava = "2.2.9"
