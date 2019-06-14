@@ -139,7 +139,7 @@ object AndroidDeps {
     const val lifecycleLivedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     const val lifecycleReactiveStreamsKtx = "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.lifecycle}"
     const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
-    const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val lightCalendarView = "jp.co.recruit_mp:LightCalendarView:${Versions.lightCalendarView}"
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
     const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
