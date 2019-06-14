@@ -396,7 +396,7 @@ object Versions {
     const val unoxAndroidArch = "0.60-next.4"
     const val unoxCore = "3.02-next.10"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.0.1"
+    const val workManager = "2.1.0-beta01"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
