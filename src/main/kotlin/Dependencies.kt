@@ -29,6 +29,7 @@ object Deps {
     const val arrowTypeclasses = "io.arrow-kt:arrow-typeclasses:${Versions.arrow}"
     const val clikt = "com.github.ajalt:clikt:${Versions.clikt}"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesReactive = "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:${Versions.coroutines}"
     const val coroutinesRx2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${Versions.coroutines}"
     const val fuel = "com.github.kittinunf.fuel:fuel:${Versions.fuel}"
     const val fuelKotlinxSerialization = "com.github.kittinunf.fuel:fuel-kotlinx-serialization:${Versions.fuel}"
