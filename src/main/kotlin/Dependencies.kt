@@ -378,7 +378,7 @@ object Versions {
     const val room = "2.1.0"
     const val rxAndroid = "2.1.1"
     const val rxBinding = "3.0.0-alpha2"
-    const val rxJava = "2.2.9"
+    const val rxJava = "2.2.10"
     const val rxKotlin = "2.3.0"
     const val rxPermissions = "0.7.0"
     const val rxRelay = "2.1.0"
@@ -401,7 +401,7 @@ object Versions {
     const val unoxAndroidArch = "0.60-next.6"
     const val unoxCore = "3.10-next.1"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.1.0-beta01"
+    const val workManager = "2.1.0-beta02"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
