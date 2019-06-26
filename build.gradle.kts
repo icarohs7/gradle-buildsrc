@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.5.0-beta04"
+    val gradlePluginVersion = "3.5.0-beta05"
     val kotlinVersion = "1.3.40"
     val navigationVersion = "2.0.0"
     val googleServicesVersion = "4.2.0"
