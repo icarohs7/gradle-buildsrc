@@ -6,8 +6,8 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.kotlin.dsl.get
 import java.io.File
-import com.android.build.gradle.TestedExtension as AndroidBlock
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
+import com.android.build.gradle.TestedExtension as AndroidBlock
 
 fun AndroidBlock.defaultSettings(project: Project? = null) {
     sourceSets["main"].java.srcDir("src/main/kotlin")

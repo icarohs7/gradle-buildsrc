@@ -1,9 +1,14 @@
 import org.gradle.api.Project
-import com.android.build.gradle.TestedExtension as AndroidBlock
-import org.gradle.api.artifacts.dsl.DependencyHandler as DependenciesBlock
-import org.gradle.kotlin.dsl.PluginDependenciesSpecScope as PluginsBlock
+import org.gradle.kotlin.dsl.withType
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
 fun Project.findProp(s: String) = project.findProperty(s) as String
 
 fun Project.uniqueName(rootProject: Project): String = "${rootProject.name}$path"
+
+fun Project.compileKotlinToJvmVersion(jvmTarget: String) {
+    tasks.withType<KotlinCompile> {
+        kotlinOptions.jvmTarget = jvmTarget
+    }
+}
