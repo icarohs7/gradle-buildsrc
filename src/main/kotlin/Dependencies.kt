@@ -398,10 +398,10 @@ object Versions {
     const val textViewDotsAnimation = "v1.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.19"
-    const val unoxAndroidArch = "0.60-next.8"
+    const val unoxAndroidArch = "0.60-next.9"
     const val unoxCore = "3.10-next.1"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.1.0-beta02"
+    const val workManager = "2.1.0-rc01"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
