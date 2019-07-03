@@ -143,7 +143,7 @@ object AndroidDeps {
     const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val lightCalendarView = "jp.co.recruit_mp:LightCalendarView:${Versions.lightCalendarView}"
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
-    const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
+    const val materialComponents = "com.google.android.material:material:${Versions.materialComponents}"
     const val materialDialogs = "com.afollestad.material-dialogs:core:${Versions.materialDialogs}"
     const val materialDialogsBottomSheets = "com.afollestad.material-dialogs:bottomsheets:${Versions.materialDialogs}"
     const val materialDialogsColor = "com.afollestad.material-dialogs:color:${Versions.materialDialogs}"
@@ -257,8 +257,7 @@ object AndroidDeps {
 
 object AndroidKaptDeps {
     val core = listOf(
-            "androidx.room:room-compiler:${Versions.room}",
-            "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
+            "androidx.room:room-compiler:${Versions.room}"
     )
 
     const val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
@@ -318,7 +317,7 @@ object Versions {
     const val currencyEditText = "2.0.2"
     const val disposer = "2.0.0"
     const val drawableToolbox = "1.0.7"
-    const val epoxy = "3.6.0"
+    const val epoxy = "3.7.0"
     const val expansionPanel = "1.2.2"
     const val firebaseCore = "17.0.0"
     const val firebaseMessaging = "19.0.0"
@@ -353,8 +352,8 @@ object Versions {
     const val lifecycle = "2.2.0-alpha02"
     const val lightCalendarView = "1.0.1"
     const val maskEditText = "1.1.1"
-    const val materialDesign = "1.1.0-alpha07"
-    const val materialDialogs = "3.0.2"
+    const val materialComponents = "1.1.0-alpha07"
+    const val materialDialogs = "3.1.0"
     const val materialDrawer = "6.1.2"
     const val materialDrawerKt = "2.0.2"
     const val materialEditText = "2.1.4"
@@ -398,7 +397,7 @@ object Versions {
     const val textViewDotsAnimation = "v1.0"
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.19"
-    const val unoxAndroidArch = "0.60-next.9"
+    const val unoxAndroidArch = "0.60-next.10"
     const val unoxCore = "3.10-next.2"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.1.0-rc01"
