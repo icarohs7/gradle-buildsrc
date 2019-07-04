@@ -346,7 +346,7 @@ object Versions {
     const val kidAdapter = "1.1.5"
     const val kodaTime = "2.0.0"
     const val koin = "2.0.1"
-    const val kotlin = "1.3.40"
+    const val kotlin = "1.3.41"
     const val kotlinxSerialization = "0.11.0"
     const val kotpref = "2.8.0"
     const val lifecycle = "2.2.0-alpha02"
