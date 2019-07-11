@@ -403,7 +403,7 @@ object Versions {
     const val unoxAndroidArch = "0.60-next.14"
     const val unoxCore = "3.10-next.3"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.1.0-rc01"
+    const val workManager = "2.1.0"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
