@@ -272,7 +272,8 @@ object TestDeps {
             "io.mockk:mockk:${Versions.mockK}",
             "org.bigtesting:fixd:${Versions.fixd}",
             "org.koin:koin-test:${Versions.koin}",
-            "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}"
+            "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
     )
 
     val androidCore = core + listOf(
