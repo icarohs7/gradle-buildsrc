@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    defaultSettings()
+    defaultSettings(project)
     sourceSets["main"].java.srcDir("src/main/kotlin")
     sourceSets["test"].java.srcDir("src/test/kotlin")
 

@@ -13,7 +13,7 @@ kotlin {
         mavenPublication { artifactId = "unoxcore-jvm" }
         compilations.all {
             kotlinOptions {
-                jvmTarget = "1.6"
+                jvmTarget = "1.8"
             }
         }
     }

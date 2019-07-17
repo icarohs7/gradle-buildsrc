@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    defaultSettings()
+    defaultSettings(project)
     defaultConfig {
         applicationId = "com.company.appname"
         versionCode = 1

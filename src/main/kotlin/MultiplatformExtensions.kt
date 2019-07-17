@@ -23,7 +23,7 @@ fun KotlinMultiplatformExtension.setupAndroidTarget(
     android {
         mavenPublication { this.artifactId = artifactId }
         publishLibraryVariants("debug")
-        compilations.all { kotlinOptions.jvmTarget = "1.6" }
+        compilations.all { kotlinOptions.jvmTarget = "1.8" }
     }
 }
 

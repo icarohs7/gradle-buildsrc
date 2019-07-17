@@ -5,20 +5,22 @@ import org.gradle.api.tasks.testing.Test
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.kotlin.dsl.get
+import org.gradle.kotlin.dsl.withType
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
-fun AndroidBlock.defaultSettings(project: Project? = null) {
+fun AndroidBlock.defaultSettings(project: Project) {
     sourceSets["main"].java.srcDir("src/main/kotlin")
     sourceSets["test"].java.srcDir("src/test/kotlin")
 
-    compileSdkVersion(28)
+    compileSdkVersion(29)
 
     facebookAppId = ""
     defaultConfig {
         minSdkVersion(21)
-        targetSdkVersion(28)
+        targetSdkVersion(29)
         testInstrumentationRunnerArguments.plusAssign("clearPackageData" to "true")
         versionCode = 1
         versionName = "1.0"
@@ -26,7 +28,7 @@ fun AndroidBlock.defaultSettings(project: Project? = null) {
 
     buildTypes {
         getByName("debug") {
-            isTestCoverageEnabled = project?.hasProperty("coverage") == true
+            isTestCoverageEnabled = project.hasProperty("coverage") == true
         }
         getByName("release") {
             isMinifyEnabled = false
@@ -57,6 +59,12 @@ fun AndroidBlock.defaultSettings(project: Project? = null) {
                     }
                 }
             })
+        }
+    }
+
+    project.tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "1.8"
         }
     }
 
