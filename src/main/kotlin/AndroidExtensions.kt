@@ -65,9 +65,6 @@ fun AndroidBlock.defaultSettings(project: Project) {
     project.tasks.withType<KotlinCompile> {
         kotlinOptions {
             jvmTarget = "1.8"
-            freeCompilerArgs += listOf(
-                    "-Xuse-experimental=kotlin.Experimental"
-            )
         }
     }
 
