@@ -211,7 +211,7 @@ object AndroidDeps {
     const val splittiesInitprovider = "com.louiscad.splitties:splitties-initprovider:${Versions.splitties}"
     const val splittiesIntents = "com.louiscad.splitties:splitties-intents:${Versions.splitties}"
     const val splittiesLifecycleCoroutines = "com.louiscad.splitties:splitties-lifecycle-coroutines:${Versions.splitties}"
-    const val splittiesMainhandler = "com.louiscad.splitties:splitties-mainhandler:${Versions.splitties}"
+    const val splittiesMainHandler = "com.louiscad.splitties:splitties-mainhandler:${Versions.splitties}"
     const val splittiesMainthread = "com.louiscad.splitties:splitties-mainthread:${Versions.splitties}"
     const val splittiesMaterialColors = "com.louiscad.splitties:splitties-material-colors:${Versions.splitties}"
     const val splittiesMaterialLists = "com.louiscad.splitties:splitties-material-lists:${Versions.splitties}"
