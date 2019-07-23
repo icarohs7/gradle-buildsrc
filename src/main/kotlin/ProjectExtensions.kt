@@ -12,3 +12,11 @@ fun Project.compileKotlinToJvmVersion(jvmTarget: String) {
         kotlinOptions.jvmTarget = jvmTarget
     }
 }
+
+fun Project.useExperimentalFeatures(usedExperimentalMarkers: List<String> = emptyList()) {
+    tasks.withType<KotlinCompile>().all {
+        kotlinOptions.freeCompilerArgs += listOf(usedExperimentalMarkers + listOf(
+                "kotlinx.coroutines.ExperimentalCoroutinesApi"
+        )).map { "-Xuse-experimental=$it" } + listOf("-Xuse-experimental=kotlin.Experimental")
+    }
+}

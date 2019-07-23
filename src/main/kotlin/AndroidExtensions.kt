@@ -65,6 +65,9 @@ fun AndroidBlock.defaultSettings(project: Project) {
     project.tasks.withType<KotlinCompile> {
         kotlinOptions {
             jvmTarget = "1.8"
+            freeCompilerArgs += listOf(
+                    "-Xuse-experimental=kotlin.Experimental"
+            )
         }
     }
 
@@ -74,11 +77,11 @@ fun AndroidBlock.defaultSettings(project: Project) {
     }
 
     packagingOptions {
-        pickFirst("META-INF/library_release.kotlin_module")
-        pickFirst("META-INF/lib_release.kotlin_module")
-        pickFirst("META-INF/atomicfu.kotlin_module")
-        pickFirst("META-INF/kotlinx-coroutines-core.kotlin_module")
-        pickFirst("META-INF/unox-core_shared.kotlin_module")
+        //        pickFirst("META-INF/library_release.kotlin_module")
+        //        pickFirst("META-INF/lib_release.kotlin_module")
+        //        pickFirst("META-INF/atomicfu.kotlin_module")
+        //        pickFirst("META-INF/kotlinx-coroutines-core.kotlin_module")
+        //        pickFirst("META-INF/unox-core_shared.kotlin_module")
     }
 }
 
