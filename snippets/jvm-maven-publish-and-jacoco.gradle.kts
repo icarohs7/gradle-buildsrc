@@ -23,12 +23,7 @@ kotlin {
         val jvmMain by getting {
             kotlin.srcDir("src/main/kotlin")
             dependencies {
-                api(project(":shared"))
-                api(Deps.kotlinStdLib)
-                api(Deps.arrowCore)
-                api(Deps.arrowEffects)
-                api(Deps.coroutinesRx2)
-                api(Deps.rxKotlin)
+                //Libs here
             }
         }
 
