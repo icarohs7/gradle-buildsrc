@@ -316,7 +316,7 @@ object Versions {
     const val circularImageView = "1.4"
     const val clikt = "1.7.0"
     const val constraintLayout = "2.0.0-beta2"
-    const val coroutines = "1.2.2"
+    const val coroutines = "1.3.0-RC"
     const val crunchyCalendar = "2.0.0"
     const val cryptoPrefs = "1.3.2.5"
     const val currencyEditText = "2.0.2"
