@@ -381,7 +381,7 @@ object Versions {
     const val quantum = "1.0.0"
     const val reactiveLocation2 = "2.1"
     const val recyclerView = "1.1.0-beta01"
-    const val retrofit = "2.6.0"
+    const val retrofit = "2.6.1"
     const val retrofitKotlinxSerializationConverter = "0.4.0"
     const val room = "2.1.0"
     const val rxAndroid = "2.1.1"
@@ -410,7 +410,7 @@ object Versions {
     const val unoxAndroidArch = "0.70-next.6"
     const val unoxCore = "3.10-next.5"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.2.0-beta02"
+    const val workManager = "2.2.0-rc01"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
