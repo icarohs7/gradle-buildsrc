@@ -408,7 +408,7 @@ object Versions {
     const val timber = "4.7.1"
     const val tornadoFx = "1.7.19"
     const val unoxAndroidArch = "0.70-next.6"
-    const val unoxCore = "3.10-next.5"
+    const val unoxCore = "3.20"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.2.0-rc01"
 
