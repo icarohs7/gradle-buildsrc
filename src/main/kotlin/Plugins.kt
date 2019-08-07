@@ -5,7 +5,7 @@
 object Plugins {
     const val kotlinJvm = """{id("org.jetbrains.kotlin.jvm") version "1.3.11"}"""
     const val shadowJar = """{id("com.github.johnrengelman.shadow") version "4.0.3"}"""
-    const val gradleLatestVersions = """{id("com.github.ben-manes.versions") version "0.20.0"}"""
+    const val gradleLatestVersions = """{id("com.github.ben-manes.versions") version "0.22.0"}"""
     const val kotlinxSerialization = """
         buildscript {
             dependencies {
