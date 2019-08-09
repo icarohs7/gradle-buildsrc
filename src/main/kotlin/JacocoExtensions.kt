@@ -15,7 +15,7 @@ fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = 
     }
 
     withType<Test> {
-        extensions.getByType<JacocoTaskExtension>().setIncludeNoLocationClasses(true)
+        extensions.getByType<JacocoTaskExtension>().isIncludeNoLocationClasses = true
     }
 
     create<JacocoReport>("jacocoRootReport") {
@@ -43,7 +43,7 @@ fun Project.setupJacoco(block: JacocoReport.() -> Unit = {}): Unit = tasks {
     }
 
     withType<Test> {
-        extensions.getByType<JacocoTaskExtension>().setIncludeNoLocationClasses(true)
+        extensions.getByType<JacocoTaskExtension>().isIncludeNoLocationClasses = true
     }
 
     create<JacocoReport>("jacocoTestReport") {

@@ -23,7 +23,7 @@ fun Project.setupBintrayPublish(
     override = true
 
     configure<PublishingExtension> {
-        this.publications.withType<MavenPublication>().all(Action { setupPom(project); pomBlock() })
+        this.publications.withType<MavenPublication>().all { setupPom(project); pomBlock() }
     }
 
     setPublications(*publications)
