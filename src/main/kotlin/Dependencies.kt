@@ -347,7 +347,7 @@ object Versions {
     const val iconicsMaterialOriginal = "3.0.1.3.original"
     const val ikonli = "2.4.0"
     const val inputMask = "4.3.1"
-    const val jFoenix = "8.0.8"
+    const val jFoenix = "8.0.9"
     const val jodaTime = "2.10.3"
     const val kaml = "0.8.0"
     const val kFormMaster = "6.1.1"
