@@ -288,6 +288,12 @@ object TestDeps {
     )
 }
 
+object JavaFxTestDeps {
+    val core = listOf(
+            "org.testfx:testfx-junit:${Versions.testFx}"
+    )
+}
+
 object AndroidTestDeps {
     val core = listOf(
             "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
@@ -420,6 +426,7 @@ object Versions {
     const val mockK = "1.9.2"
     const val robolectric = "4.3"
     const val testCore = "1.2.0"
+    const val testFx = "4.0.16-alpha"
 
     const val espresso = "3.2.0"
     const val testRules = "1.2.0"
