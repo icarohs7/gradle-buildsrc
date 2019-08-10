@@ -90,6 +90,7 @@ object JavaFxDeps {
     const val ikonliZondicons = "org.kordamp.ikonli:ikonli-zondicons-pack:${Versions.ikonli}"
     const val jFoenix = "com.jfoenix:jfoenix:${Versions.jFoenix}"
     const val tornadoFx = "no.tornado:tornadofx:${Versions.tornadoFx}"
+    const val unoxJavafxArchCore = "com.github.icarohs7:unox-javafx-arch-core:${Versions.unoxJavafxArch}"
 }
 
 object AndroidDeps {
@@ -416,6 +417,7 @@ object Versions {
     const val tornadoFx = "1.7.19"
     const val unoxAndroidArch = "0.71-next.5"
     const val unoxCore = "3.20"
+    const val unoxJavafxArch = "0.10"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.2.0-rc01"
 
