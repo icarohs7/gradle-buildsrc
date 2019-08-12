@@ -1,5 +1,4 @@
 import com.jfrog.bintray.gradle.BintrayExtension
-import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
@@ -36,6 +35,7 @@ fun Project.setupBintrayPublish(
         vcsUrl = findProp("vcsUrl")
         issueTrackerUrl = findProp("issueTrackerUrl")
         publicDownloadNumbers = true
+
         setLabels("kotlin")
         setLicenses("MIT")
     }

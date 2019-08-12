@@ -1,31 +1,14 @@
-/**
- * Object used to store snippets to plugin
- * applications using the plugins dsl
- */
-object Plugins {
-    const val kotlinJvm = """{id("org.jetbrains.kotlin.jvm") version "1.3.11"}"""
-    const val shadowJar = """{id("com.github.johnrengelman.shadow") version "4.0.3"}"""
-    const val gradleLatestVersions = """{id("com.github.ben-manes.versions") version "0.22.0"}"""
-    const val kotlinxSerialization = """
-        buildscript {
-            dependencies {
-                classpath("org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}")
-            }
-        }
-        
-        plugins {
-           id("kotlinx-serialization")
-        }
-        """
-    const val navigationComponent = """
-        buildscript {
-            dependencies {
-                classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}")
-            }
-        }
-
-        plugins {
-            id("androidx.navigation.safeargs.kotlin")
-        }
-    """
-}
+//// https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow
+//id("com.github.johnrengelman.shadow")
+//
+////https://plugins.gradle.org/plugin/com.github.ben-manes.versions
+//id("com.github.ben-manes.versions")
+//
+////https://plugins.gradle.org/plugin/com.github.b3er.local.properties
+//id("com.github.b3er.local.properties")
+//
+////https://plugins.gradle.org/plugin/com.vanniktech.dependency.graph.generator
+//id("com.vanniktech.dependency.graph.generator")
+//
+////https://plugins.gradle.org/plugin/com.jfrog.bintray
+//id("com.jfrog.bintray")

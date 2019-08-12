@@ -90,6 +90,7 @@ object JavaFxDeps {
     const val ikonliZondicons = "org.kordamp.ikonli:ikonli-zondicons-pack:${Versions.ikonli}"
     const val jFoenix = "com.jfoenix:jfoenix:${Versions.jFoenix}"
     const val tornadoFx = "no.tornado:tornadofx:${Versions.tornadoFx}"
+    const val unoxJavafxArchCore = "com.github.icarohs7:unox-javafx-arch-core:${Versions.unoxJavafxArch}"
 }
 
 object AndroidDeps {
@@ -288,6 +289,12 @@ object TestDeps {
     )
 }
 
+object JavaFxTestDeps {
+    val core = listOf(
+            "org.testfx:testfx-junit:${Versions.testFx}"
+    )
+}
+
 object AndroidTestDeps {
     val core = listOf(
             "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
@@ -347,7 +354,7 @@ object Versions {
     const val iconicsMaterialOriginal = "3.0.1.3.original"
     const val ikonli = "2.4.0"
     const val inputMask = "4.3.1"
-    const val jFoenix = "8.0.8"
+    const val jFoenix = "8.0.9"
     const val jodaTime = "2.10.3"
     const val kaml = "0.8.0"
     const val kFormMaster = "6.1.1"
@@ -410,6 +417,7 @@ object Versions {
     const val tornadoFx = "1.7.19"
     const val unoxAndroidArch = "0.71-next.5"
     const val unoxCore = "3.20"
+    const val unoxJavafxArch = "0.10"
     const val viewAnimator = "1.1.1"
     const val workManager = "2.2.0-rc01"
 
@@ -420,6 +428,7 @@ object Versions {
     const val mockK = "1.9.2"
     const val robolectric = "4.3"
     const val testCore = "1.2.0"
+    const val testFx = "4.0.16-alpha"
 
     const val espresso = "3.2.0"
     const val testRules = "1.2.0"
