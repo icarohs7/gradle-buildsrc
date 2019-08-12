@@ -380,7 +380,7 @@ object Versions {
     const val multiLineRadioGroup = "1.0.0.6"
     const val mvRx = "1.0.2"
     const val navigation = "2.2.0-alpha01"
-    const val okHttp = "4.0.1"
+    const val okHttp = "4.1.0"
     const val okio = "2.2.2"
     const val passcodeView = "1.2.1"
     const val persistentSearch = "1.1.0-SNAPSHOT"
