@@ -316,7 +316,7 @@ object Versions {
     const val bluetoothKit = "0.3.1"
     const val bungee = "master-SNAPSHOT"
     const val checkableChipView = "1.0.3"
-    const val chucker = "2.0.4"
+    const val chucker = "3.0.0"
     const val circularImageView = "1.4"
     const val clikt = "1.7.0"
     const val constraintLayout = "2.0.0-beta2"
