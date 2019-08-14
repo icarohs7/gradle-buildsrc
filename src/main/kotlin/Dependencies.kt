@@ -365,7 +365,7 @@ object Versions {
     const val kotlin = "1.3.41"
     const val kotlinFlowExtensions = "0.0.2"
     const val kotlinxSerialization = "0.11.1"
-    const val kotpref = "2.8.0"
+    const val kotpref = "2.9.1"
     const val lifecycle = "2.2.0-alpha03"
     const val lightCalendarView = "1.0.1"
     const val maskEditText = "1.1.1"
