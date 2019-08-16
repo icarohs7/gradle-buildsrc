@@ -419,7 +419,7 @@ object Versions {
     const val unoxCore = "3.20"
     const val unoxJavafxArch = "0.10"
     const val viewAnimator = "1.1.1"
-    const val workManager = "2.2.0-rc01"
+    const val workManager = "2.2.0"
 
     const val barista = "3.1.0"
     const val fixd = "1.0.5"
