@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.5.0-rc03"
+    val gradlePluginVersion = "3.5.0"
     val kotlinVersion = "1.3.41"
     val navigationVersion = "2.2.0-alpha01"
     val googleServicesVersion = "4.2.0"
@@ -37,13 +37,13 @@ dependencies {
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
-                           ":local-properties-plugin" +
-                           ":$localPropertiesPluginVersion")
+            ":local-properties-plugin" +
+            ":$localPropertiesPluginVersion")
 
     //id("com.vanniktech.dependency.graph.generator")
     implementation("gradle.plugin.com.vanniktech" +
-                           ":gradle-dependency-graph-generator-plugin" +
-                           ":$dependencyGraphGeneratorPluginVersion")
+            ":gradle-dependency-graph-generator-plugin" +
+            ":$dependencyGraphGeneratorPluginVersion")
 }
 
 repositories {
