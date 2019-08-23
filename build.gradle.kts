@@ -6,7 +6,7 @@ dependencies {
     val gradlePluginVersion = "3.5.0"
     val kotlinVersion = "1.3.50"
     val navigationVersion = "2.2.0-alpha01"
-    val googleServicesVersion = "4.2.0"
+    val googleServicesVersion = "4.3.0"
     val bintrayPluginVersion = "1.8.4"
     val versionsPluginVersion = "0.22.0"
     val localPropertiesPluginVersion = "1.1"
@@ -26,7 +26,8 @@ dependencies {
     //id("androidx.navigation.safeargs.kotlin")
     implementation("androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion")
 
-    //apply(plugin = "com.google.gms.google-services") (last line of file)
+    //Use on last line of buildscript file
+    //apply(plugin = "com.google.gms.google-services")
     implementation("com.google.gms:google-services:$googleServicesVersion")
 
     //id("com.jfrog.bintray")
