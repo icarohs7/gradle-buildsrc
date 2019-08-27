@@ -1,7 +1,5 @@
-import com.android.builder.model.BuildType
 import groovy.lang.Closure
 import org.gradle.api.JavaVersion
-import org.gradle.api.NamedDomainObjectContainer
 import org.gradle.api.Project
 import org.gradle.api.tasks.testing.Test
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
@@ -21,6 +19,13 @@ fun AndroidBlock.defaultSettings(project: Project) {
 
     facebookAppId = ""
     defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments.plusAssign(mapOf(
+                        "room.incremental" to "true"
+                ))
+            }
+        }
         minSdkVersion(21)
         targetSdkVersion(29)
         testInstrumentationRunnerArguments.plusAssign("clearPackageData" to "true")
