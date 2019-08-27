@@ -112,6 +112,7 @@ object AndroidDeps {
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val coreKtx = "androidx.core:core-ktx:${Versions.androidxCore}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+    const val coroutinesPlayServices = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:${Versions.coroutines}"
     const val crunchyCalendar = "ru.cleverpumpkin:crunchycalendar:${Versions.crunchyCalendar}"
     const val cryptoPrefs = "com.github.AndreaCioccarelli:CryptoPrefs:${Versions.cryptoPrefs}"
     const val currencyEditText = "com.github.BlacKCaT27:CurrencyEditText:${Versions.currencyEditText}"
