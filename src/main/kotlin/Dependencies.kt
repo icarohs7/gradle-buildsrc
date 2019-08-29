@@ -340,7 +340,7 @@ object Versions {
     const val drawableToolbox = "1.0.7"
     const val epoxy = "3.7.0"
     const val expansionPanel = "1.2.2"
-    const val firebaseCore = "17.1.0"
+    const val firebaseCore = "17.2.0"
     const val firebaseMessaging = "20.0.0"
     const val flashBar = "1.0.3"
     const val flexboxLayout = "1.1.0"
