@@ -385,7 +385,7 @@ object Versions {
     const val materialSearchBar = "0.8.2"
     const val materialSpinner = "1.3.1"
     const val multiLineRadioGroup = "1.0.0.6"
-    const val mvRx = "1.0.2"
+    const val mvRx = "1.1.0"
     const val navigation = "2.2.0-alpha01"
     const val okHttp = "4.1.0"
     const val okio = "2.2.2"
