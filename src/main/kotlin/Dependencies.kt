@@ -152,9 +152,12 @@ object AndroidDeps {
     const val lifecycleReactiveStreamsKtx = "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.lifecycle}"
     const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
-    const val lithoCore = "com.facebook.litho:litho-core:${Versions.litho}"
-    const val lithoWidget = "com.facebook.litho:litho-widget:${Versions.litho}"
     const val lightCalendarView = "jp.co.recruit_mp:LightCalendarView:${Versions.lightCalendarView}"
+    const val lithoCore = "com.facebook.litho:litho-core:${Versions.litho}"
+    const val lithoSectionsAnnotations = "com.facebook.litho:litho-sections-annotations:${Versions.litho}" //compileOnly
+    const val lithoSectionsCore = "com.facebook.litho:litho-sections-core:${Versions.litho}"
+    const val lithoSectionsWidget = "com.facebook.litho:litho-sections-widget:${Versions.litho}"
+    const val lithoWidget = "com.facebook.litho:litho-widget:${Versions.litho}"
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
     const val materialComponents = "com.google.android.material:material:${Versions.materialComponents}"
     const val materialDialogs = "com.afollestad.material-dialogs:core:${Versions.materialDialogs}"
@@ -203,6 +206,7 @@ object AndroidDeps {
     const val simpleBarcodeScanner = "com.github.bobekos:SimpleBarcodeScanner:${Versions.simpleBarcodeScanner}"
     const val smartLocation = "io.nlopez.smartlocation:library:${Versions.smartLocation}"
     const val smartScheduler = "io.hypertrack:smart-scheduler:${Versions.smartScheduler}"
+    const val soLoader = "com.facebook.soloader:soloader:${Versions.soLoader}"
     const val spinKit = "com.github.ybq:Android-SpinKit:${Versions.spinkit}"
     const val splittiesActivities = "com.louiscad.splitties:splitties-activities:${Versions.splitties}"
     const val splittiesAlertdialog = "com.louiscad.splitties:splitties-alertdialog:${Versions.splitties}"
@@ -276,6 +280,7 @@ object AndroidKaptDeps {
 
     const val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
     const val litho = "com.facebook.litho:litho-processor:${Versions.litho}"
+    const val lithoSections = "com.facebook.litho:litho-sections-processor:${Versions.litho}"
 }
 
 object TestDeps {
@@ -415,6 +420,7 @@ object Versions {
     const val smartLocation = "3.3.3"
     const val smartScheduler = "0.0.14"
     const val snakeYaml = "1.23"
+    const val soLoader = "0.5.1"
     const val spinkit = "1.4.0"
     const val splitties = "3.0.0-alpha06"
     const val spotsdialog = "1.1"

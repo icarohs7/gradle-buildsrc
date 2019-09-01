@@ -7,8 +7,7 @@ plugins {
     defaults.`android-module`
 }
 
-android {
-    defaultSettings(project)
+unoxAndroid {
     defaultConfig {
         applicationId = "com.company.appname"
         versionCode = 1
