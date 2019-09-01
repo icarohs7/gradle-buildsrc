@@ -11,6 +11,13 @@ import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
+fun Project.unoxAndroid(block: AndroidBlock.() -> Unit) {
+    extensions.configure<AndroidBlock>("android") {
+        defaultSettings(this@unoxAndroid)
+        block()
+    }
+}
+
 fun AndroidBlock.defaultSettings(project: Project) {
     sourceSets["main"].java.srcDir("src/main/kotlin")
     sourceSets["test"].java.srcDir("src/test/kotlin")

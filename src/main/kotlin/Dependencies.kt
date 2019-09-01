@@ -152,6 +152,8 @@ object AndroidDeps {
     const val lifecycleReactiveStreamsKtx = "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.lifecycle}"
     const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
     const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val lithoCore = "com.facebook.litho:litho-core:${Versions.litho}"
+    const val lithoWidget = "com.facebook.litho:litho-widget:${Versions.litho}"
     const val lightCalendarView = "jp.co.recruit_mp:LightCalendarView:${Versions.lightCalendarView}"
     const val maskedEditText = "com.github.santalu:mask-edittext:${Versions.maskEditText}"
     const val materialComponents = "com.google.android.material:material:${Versions.materialComponents}"
@@ -273,6 +275,7 @@ object AndroidKaptDeps {
     )
 
     const val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
+    const val litho = "com.facebook.litho:litho-processor:${Versions.litho}"
 }
 
 object TestDeps {
@@ -375,6 +378,7 @@ object Versions {
     const val kotpref = "2.9.1"
     const val lifecycle = "2.2.0-alpha03"
     const val lightCalendarView = "1.0.1"
+    const val litho = "0.30.0"
     const val maskEditText = "1.1.1"
     const val materialComponents = "1.1.0-alpha09"
     const val materialDialogs = "3.1.0"
