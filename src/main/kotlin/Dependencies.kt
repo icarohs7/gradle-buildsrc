@@ -326,7 +326,7 @@ object JSDeps {
 }
 
 object Versions {
-    const val androidSpeedDial = "2.0.1"
+    const val androidSpeedDial = "3.0.0"
     const val androidToggle = "1.1.0"
     const val androidxCore = "1.1.0-rc02"
     const val androidxPreference = "1.1.0-rc01"
