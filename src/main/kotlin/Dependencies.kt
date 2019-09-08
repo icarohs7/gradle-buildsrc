@@ -46,7 +46,10 @@ object Deps {
     const val kotlinxSerialization =
             "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
     const val ktorServerCore = "io.ktor:ktor-server-core:${Versions.ktor}"
+    const val ktorServerGson = "io.ktor:ktor-gson:${Versions.ktor}"
+    const val ktorServerJackson = "io.ktor:ktor-jackson:${Versions.ktor}"
     const val ktorServerNetty = "io.ktor:ktor-server-netty:${Versions.ktor}"
+    const val ktorServerSerialization = "io.ktor:ktor-serialization:${Versions.ktor}"
     const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logback}"
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
