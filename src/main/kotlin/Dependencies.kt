@@ -31,6 +31,7 @@ object Deps {
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     const val coroutinesReactive = "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:${Versions.coroutines}"
     const val coroutinesRx2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${Versions.coroutines}"
+    const val exposed = "org.jetbrains.exposed:exposed:${Versions.exposed}"
     const val fuel = "com.github.kittinunf.fuel:fuel:${Versions.fuel}"
     const val fuelKotlinxSerialization = "com.github.kittinunf.fuel:fuel-kotlinx-serialization:${Versions.fuel}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
@@ -43,7 +44,7 @@ object Deps {
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val kotlinStdLibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinxSerialization =
-        "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
+            "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
     const val ktorServerCore = "io.ktor:ktor-server-core:${Versions.ktor}"
     const val ktorServerNetty = "io.ktor:ktor-server-netty:${Versions.ktor}"
     const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logback}"
@@ -53,7 +54,7 @@ object Deps {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val retrofitKotlinxSerializationConverter =
-        "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitKotlinxSerializationConverter}"
+            "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.retrofitKotlinxSerializationConverter}"
     const val rxJava2 = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
     const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:${Versions.rxRelay}"
@@ -138,10 +139,10 @@ object AndroidDeps {
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     const val googlePlayCore = "com.google.android.play:core:${Versions.googlePlayCore}"
     const val googlePlayServicesLocation =
-        "com.google.android.gms:play-services-location:${Versions.googlePlayServicesLocation}"
+            "com.google.android.gms:play-services-location:${Versions.googlePlayServicesLocation}"
     const val googlePlayServicesMaps = "com.google.android.gms:play-services-maps:${Versions.googlePlayServicesMaps}"
     const val googlePlayServicesPlaces =
-        "com.google.android.gms:play-services-places:${Versions.googlePlayServicesPlaces}"
+            "com.google.android.gms:play-services-places:${Versions.googlePlayServicesPlaces}"
     const val helloCharts = "com.github.lecho:hellocharts-android:${Versions.helloCharts}"
     const val iconicsFontAwesome = "com.mikepenz:fontawesome-typeface:${Versions.iconicsFontAwesome}@aar"
     const val iconicsMaterial = "com.mikepenz:material-design-iconic-typeface:${Versions.iconicsMaterial}@aar"
@@ -207,9 +208,9 @@ object AndroidDeps {
     const val rxBindingMaterial = "com.jakewharton.rxbinding3:rxbinding-material:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding3:rxbinding-recyclerview:${Versions.rxBinding}"
     const val rxBindingSlidingPaneLayout =
-        "com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:${Versions.rxBinding}"
+            "com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:${Versions.rxBinding}"
     const val rxBindingSwipeRefreshLayout =
-        "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:${Versions.rxBinding}"
+            "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:${Versions.rxBinding}"
     const val rxBindingViewPager = "com.jakewharton.rxbinding3:rxbinding-viewpager:${Versions.rxBinding}"
     const val rxPermission = "com.github.vanniktech:RxPermission:${Versions.rxPermissions}"
     const val searchDialog = "com.github.mirrajabi:search-dialog:${Versions.searchDialog}"
@@ -222,9 +223,9 @@ object AndroidDeps {
     const val splittiesActivities = "com.louiscad.splitties:splitties-activities:${Versions.splitties}"
     const val splittiesAlertdialog = "com.louiscad.splitties:splitties-alertdialog:${Versions.splitties}"
     const val splittiesAlertdialogAppcompat =
-        "com.louiscad.splitties:splitties-alertdialog-appcompat:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-alertdialog-appcompat:${Versions.splitties}"
     const val splittiesAlertdialogAppcompatCoroutines =
-        "com.louiscad.splitties:splitties-alertdialog-appcompat-coroutines:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-alertdialog-appcompat-coroutines:${Versions.splitties}"
     const val splittiesAppctx = "com.louiscad.splitties:splitties-appctx:${Versions.splitties}"
     const val splittiesArchLifecycle = "com.louiscad.splitties:splitties-arch-lifecycle:${Versions.splitties}"
     const val splittiesArchRoom = "com.louiscad.splitties:splitties-arch-room:${Versions.splitties}"
@@ -239,7 +240,7 @@ object AndroidDeps {
     const val splittiesInitprovider = "com.louiscad.splitties:splitties-initprovider:${Versions.splitties}"
     const val splittiesIntents = "com.louiscad.splitties:splitties-intents:${Versions.splitties}"
     const val splittiesLifecycleCoroutines =
-        "com.louiscad.splitties:splitties-lifecycle-coroutines:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-lifecycle-coroutines:${Versions.splitties}"
     const val splittiesMainHandler = "com.louiscad.splitties:splitties-mainhandler:${Versions.splitties}"
     const val splittiesMainthread = "com.louiscad.splitties:splitties-mainthread:${Versions.splitties}"
     const val splittiesMaterialColors = "com.louiscad.splitties:splitties-material-colors:${Versions.splitties}"
@@ -251,29 +252,29 @@ object AndroidDeps {
     const val splittiesSystemservices = "com.louiscad.splitties:splitties-systemservices:${Versions.splitties}"
     const val splittiesToast = "com.louiscad.splitties:splitties-toast:${Versions.splitties}"
     const val splittiesTypesaferecyclerview =
-        "com.louiscad.splitties:splitties-typesaferecyclerview:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-typesaferecyclerview:${Versions.splitties}"
     const val splittiesViews = "com.louiscad.splitties:splitties-views:${Versions.splitties}"
     const val splittiesViewsAppcompat = "com.louiscad.splitties:splitties-views-appcompat:${Versions.splitties}"
     const val splittiesViewsCardview = "com.louiscad.splitties:splitties-views-cardview:${Versions.splitties}"
     const val splittiesViewsCoroutines = "com.louiscad.splitties:splitties-views-coroutines:${Versions.splitties}"
     const val splittiesViewsCoroutinesMaterial =
-        "com.louiscad.splitties:splitties-views-coroutines-material:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-coroutines-material:${Versions.splitties}"
     const val splittiesViewsDsl = "com.louiscad.splitties:splitties-views-dsl:${Versions.splitties}"
     const val splittiesViewsDslAppcompat = "com.louiscad.splitties:splitties-views-dsl-appcompat:${Versions.splitties}"
     const val splittiesViewsDslConstraintlayout =
-        "com.louiscad.splitties:splitties-views-dsl-constraintlayout:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-dsl-constraintlayout:${Versions.splitties}"
     const val splittiesViewsDslCoordinatorlayout =
-        "com.louiscad.splitties:splitties-views-dsl-coordinatorlayout:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-dsl-coordinatorlayout:${Versions.splitties}"
     const val splittiesViewsDslMaterial = "com.louiscad.splitties:splitties-views-dsl-material:${Versions.splitties}"
     const val splittiesViewsDslRecyclerview =
-        "com.louiscad.splitties:splitties-views-dsl-recyclerview:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-dsl-recyclerview:${Versions.splitties}"
     const val splittiesViewsMaterial = "com.louiscad.splitties:splitties-views-material:${Versions.splitties}"
     const val splittiesViewsRecyclerview = "com.louiscad.splitties:splitties-views-recyclerview:${Versions.splitties}"
     const val splittiesViewsSelectable = "com.louiscad.splitties:splitties-views-selectable:${Versions.splitties}"
     const val splittiesViewsSelectableAppcompat =
-        "com.louiscad.splitties:splitties-views-selectable-appcompat:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-selectable-appcompat:${Versions.splitties}"
     const val splittiesViewsSelectableConstraintlayout =
-        "com.louiscad.splitties:splitties-views-selectable-constraintlayout:${Versions.splitties}"
+            "com.louiscad.splitties:splitties-views-selectable-constraintlayout:${Versions.splitties}"
     const val spotsDialog = "com.github.d-max:spots-dialog:${Versions.spotsdialog}@aar"
     const val stateViews = "com.github.kobeumut:StateViews:${Versions.stateViews}"
     const val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
@@ -286,7 +287,7 @@ object AndroidDeps {
     const val unoxAndroidArchBenchmark = "com.github.icarohs7:unox-android-arch-benchmark:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchCore = "com.github.icarohs7:unox-android-arch-core:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchNotification =
-        "com.github.icarohs7:unox-android-arch-notification:${Versions.unoxAndroidArch}"
+            "com.github.icarohs7:unox-android-arch-notification:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchRx = "com.github.icarohs7:unox-android-arch-rx:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchScheduling = "com.github.icarohs7:unox-android-arch-scheduling:${Versions.unoxAndroidArch}"
     const val unoxAndroidArchSpinner = "com.github.icarohs7:unox-android-arch-spinner:${Versions.unoxAndroidArch}"
@@ -297,7 +298,7 @@ object AndroidDeps {
 
 object AndroidKaptDeps {
     val core = listOf(
-        "androidx.room:room-compiler:${Versions.room}"
+            "androidx.room:room-compiler:${Versions.room}"
     )
 
     const val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
@@ -307,19 +308,19 @@ object AndroidKaptDeps {
 
 object TestDeps {
     val core = listOf(
-        "org.jacoco:org.jacoco.agent:0.7.9:runtime",
-        "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
-        "io.mockk:mockk:${Versions.mockK}",
-        "org.bigtesting:fixd:${Versions.fixd}",
-        "org.koin:koin-test:${Versions.koin}",
-        "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}",
-        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+            "org.jacoco:org.jacoco.agent:0.7.9:runtime",
+            "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
+            "io.mockk:mockk:${Versions.mockK}",
+            "org.bigtesting:fixd:${Versions.fixd}",
+            "org.koin:koin-test:${Versions.koin}",
+            "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
     )
 
     val androidCore = core + listOf(
-        "androidx.room:room-testing:${Versions.room}",
-        "androidx.test:core:${Versions.testCore}",
-        "org.robolectric:robolectric:${Versions.robolectric}"
+            "androidx.room:room-testing:${Versions.room}",
+            "androidx.test:core:${Versions.testCore}",
+            "org.robolectric:robolectric:${Versions.robolectric}"
     )
 
     const val ktorServer = "io.ktor:ktor-server-tests:${Versions.ktor}"
@@ -327,15 +328,15 @@ object TestDeps {
 
 object JavaFxTestDeps {
     val core = listOf(
-        "org.testfx:testfx-junit:${Versions.testFx}"
+            "org.testfx:testfx-junit:${Versions.testFx}"
     )
 }
 
 object AndroidTestDeps {
     val core = listOf(
-        "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
-        "androidx.test.espresso:espresso-intents:${Versions.espresso}",
-        "androidx.test:rules:${Versions.testRules}"
+            "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
+            "androidx.test.espresso:espresso-intents:${Versions.espresso}",
+            "androidx.test:rules:${Versions.testRules}"
     ) + TestDeps.androidCore.filterNot { it.contains("org.robolectric:robolectric") }
 
     const val barista = "com.schibsted.spain:barista:${Versions.barista}"
@@ -372,6 +373,7 @@ object Versions {
     const val drawableToolbox = "1.0.7"
     const val epoxy = "3.7.0"
     const val expansionPanel = "1.2.2"
+    const val exposed = "0.17.3"
     const val firebaseCore = "17.2.0"
     const val firebaseFirestore = "21.0.0"
     const val firebaseMessaging = "20.0.0"
