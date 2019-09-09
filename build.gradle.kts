@@ -12,7 +12,7 @@ dependencies {
     val localPropertiesPluginVersion = "1.1"
     val dependencyGraphGeneratorPluginVersion = "0.5.0"
 
-    compileOnly(gradleApi())
+    implementation(gradleApi())
 
     //id("com.android.application") || id("com.android.library")
     implementation("com.android.tools.build:gradle:$gradlePluginVersion")
