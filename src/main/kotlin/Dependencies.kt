@@ -29,6 +29,7 @@ object Deps {
     val arrowRecursionExtensions = "io.arrow-kt:arrow-recursion-extensions:${Versions.arrow}"
     val arrowSyntax = "io.arrow-kt:arrow-syntax:${Versions.arrow}"
     val arrowTypeclasses = "io.arrow-kt:arrow-typeclasses:${Versions.arrow}"
+    val awsDynamoDBSDK = "com.amazonaws:aws-java-sdk-dynamodb"
     val awsPlatform = { d: DependencyHandler -> d.platform("software.amazon.awssdk:bom:${Versions.awsPlatform}") }
     val clikt = "com.github.ajalt:clikt:${Versions.clikt}"
     val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
