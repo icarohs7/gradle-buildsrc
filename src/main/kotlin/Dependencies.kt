@@ -30,7 +30,7 @@ object Deps {
     val arrowSyntax = "io.arrow-kt:arrow-syntax:${Versions.arrow}"
     val arrowTypeclasses = "io.arrow-kt:arrow-typeclasses:${Versions.arrow}"
     val awsDynamoDBSDK = "com.amazonaws:aws-java-sdk-dynamodb"
-    val awsPlatform = { d: DependencyHandler -> d.platform("software.amazon.awssdk:bom:${Versions.awsPlatform}") }
+    val awsPlatform = { d: DependencyHandler -> d.platform("com.amazonaws:aws-java-sdk-bom:${Versions.awsPlatform}") }
     val clikt = "com.github.ajalt:clikt:${Versions.clikt}"
     val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     val coroutinesReactive = "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:${Versions.coroutines}"
@@ -354,7 +354,7 @@ object Versions {
     val anotherViewPager = "1.0.2"
     val appCompat = "1.1.0-rc01"
     val arrow = "0.9.0"
-    val awsPlatform = "2.5.29"
+    val awsPlatform = "1.11.228"
     val bluetoothKit = "0.3.1"
     val bungee = "master-SNAPSHOT"
     val checkableChipView = "1.0.3"
