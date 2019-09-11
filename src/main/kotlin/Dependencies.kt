@@ -43,6 +43,7 @@ object Deps {
     val khronos = "com.github.hotchemi:khronos:${Versions.khronos}"
     val kodaTime = "com.github.debop:koda-time:${Versions.kodaTime}"
     val koinCore = "org.koin:koin-core:${Versions.koin}"
+    val koinKtor = "org.koin:koin-ktor:${Versions.koin}"
     val kotlinEvents = "com.github.halcyxn:kotlin-events:${Versions.kotlinEvents}"
     val kotlinFlowExtensions = "com.github.akarnokd:kotlin-flow-extensions:${Versions.kotlinFlowExtensions}"
     val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
