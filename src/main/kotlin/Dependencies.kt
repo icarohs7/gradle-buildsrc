@@ -340,7 +340,7 @@ object JSDeps {
 }
 
 object Versions {
-    val androidSpeedDial = "3.0.0"
+    val androidSpeedDial = "3.1.0"
     val androidToggle = "1.1.0"
     val androidxCore = "1.1.0-rc02"
     val androidxPreference = "1.1.0"
@@ -355,7 +355,7 @@ object Versions {
     val chucker = "3.0.1"
     val circularImageView = "1.4"
     val clikt = "1.7.0"
-    val coil = "0.6.1"
+    val coil = "0.7.0"
     val constraintLayout = "2.0.0-beta2"
     val coroutines = "1.3.1"
     val crunchyCalendar = "2.0.0"
@@ -377,7 +377,7 @@ object Versions {
     val fuel = "2.0.0"
     val fullscreenDialog = "1.0.0"
     val glide = "4.8.0"
-    val googlePlayCore = "1.6.1"
+    val googlePlayCore = "1.6.3"
     val googlePlayServicesLocation = "17.0.0"
     val googlePlayServicesMaps = "17.0.0"
     val googlePlayServicesPlaces = "17.0.0"
@@ -418,7 +418,7 @@ object Versions {
     val multiLineRadioGroup = "1.0.0.6"
     val mvRx = "1.1.0"
     val navigation = "2.2.0-alpha02"
-    val okHttp = "4.1.1"
+    val okHttp = "4.2.0"
     val okio = "2.2.2"
     val passcodeView = "1.2.1"
     val persistentSearch = "1.1.0-SNAPSHOT"
