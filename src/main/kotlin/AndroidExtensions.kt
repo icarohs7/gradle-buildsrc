@@ -44,9 +44,8 @@ internal fun Project.configureDefaultAndroid() {
             }
         }
 
-        dataBinding {
-            isEnabled = true
-        }
+        dataBinding.isEnabled = true
+        viewBinding.isEnabled = true
 
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_1_8
