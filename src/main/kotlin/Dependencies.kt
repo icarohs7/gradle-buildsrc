@@ -52,6 +52,7 @@ object Deps {
     val ktorServerCore = "io.ktor:ktor-server-core:${Versions.ktor}"
     val ktorServerGson = "io.ktor:ktor-gson:${Versions.ktor}"
     val ktorServerJackson = "io.ktor:ktor-jackson:${Versions.ktor}"
+    val ktorServerCIO = "io.ktor:ktor-server-cio:${Versions.ktor}"
     val ktorServerJetty = "io.ktor:ktor-server-jetty:${Versions.ktor}"
     val ktorServerNetty = "io.ktor:ktor-server-netty:${Versions.ktor}"
     val ktorServerSerialization = "io.ktor:ktor-serialization:${Versions.ktor}"
