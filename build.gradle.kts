@@ -38,13 +38,13 @@ dependencies {
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
-            ":local-properties-plugin" +
-            ":$localPropertiesPluginVersion")
+                           ":local-properties-plugin" +
+                           ":$localPropertiesPluginVersion")
 
     //id("com.vanniktech.dependency.graph.generator")
     implementation("gradle.plugin.com.vanniktech" +
-            ":gradle-dependency-graph-generator-plugin" +
-            ":$dependencyGraphGeneratorPluginVersion")
+                           ":gradle-dependency-graph-generator-plugin" +
+                           ":$dependencyGraphGeneratorPluginVersion")
 }
 
 repositories {
