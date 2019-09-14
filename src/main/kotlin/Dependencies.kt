@@ -402,7 +402,7 @@ object Versions {
     val kotlin = "1.3.50"
     val kotlinEvents = "v2.0"
     val kotlinFlowExtensions = "0.0.2"
-    val kotlinxSerialization = "0.12.0"
+    val kotlinxSerialization = "0.13.0"
     val kotpref = "2.9.1"
     val ktor = "1.2.4"
     val lifecycle = "2.2.0-alpha04"
