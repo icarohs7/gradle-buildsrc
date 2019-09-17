@@ -458,7 +458,7 @@ object Versions {
     val textViewDotsAnimation = "v1.0"
     val timber = "4.7.1"
     val tornadoFx = "1.7.19"
-    val unoxCore = "3.20-next.2"
+    val unoxCore = "3.20-next.3"
     val unoxJavafxArch = "0.10-next.1"
     val viewAnimator = "1.1.1"
     val workManager = "2.2.0"
