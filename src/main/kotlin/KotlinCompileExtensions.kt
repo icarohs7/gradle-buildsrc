@@ -7,10 +7,14 @@ fun AbstractKotlinCompilation<*>.setupMetaInfoName(rootProject: Project, project
     kotlinOptions.freeCompilerArgs += listOf("-module-name", fileName)
 }
 
+/**
+ * Remove warning from many experimental features usages
+ */
 fun KotlinCompile<*>.useExperimentalFeatures(usedExperimentalMarkers: List<String> = emptyList()) {
     kotlinOptions.freeCompilerArgs += listOf(
             "-Xuse-experimental=kotlin.Experimental",
             "-Xuse-experimental=kotlinx.coroutines.FlowPreview",
-            "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi"
+            "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
+            "-Xuse-experimental=kotlin.time.ExperimentalTime"
     ) + usedExperimentalMarkers
 }

@@ -5,13 +5,18 @@ import org.gradle.api.tasks.testing.Test
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.gradle.kotlin.dsl.get
-import org.gradle.kotlin.dsl.withType
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
 internal fun Project.configureDefaultAndroid() {
+    compileKotlin {
+        useExperimentalFeatures()
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+
     extensions.configure<AndroidBlock>("android") {
         sourceSets["main"].java.srcDir("src/main/kotlin")
         sourceSets["test"].java.srcDir("src/test/kotlin")
@@ -65,12 +70,6 @@ internal fun Project.configureDefaultAndroid() {
                         }
                     }
                 })
-            }
-        }
-
-        project.tasks.withType<KotlinCompile> {
-            kotlinOptions {
-                jvmTarget = "1.8"
             }
         }
 
