@@ -19,8 +19,10 @@ fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = 
     }
 
     create<JacocoReport>("jacocoRootReport") {
-        val subprojectsJacocoReportTasks = getTasksByName("jacocoTestReport", true).asSequence()
-                .mapNotNull { it as? JacocoReport }.toList()
+        val subprojectsJacocoReportTasks = getTasksByName("jacocoTestReport", true)
+                .asSequence()
+                .mapNotNull { it as? JacocoReport }
+                .toList()
 
         dependsOn(subprojectsJacocoReportTasks)
 
