@@ -13,8 +13,8 @@ fun Project.setupBintrayPublish(
         block: BintrayExtension.() -> Unit = {}
 ): Unit = with(bintrayExtension) {
     try {
-        user = project.findProp("bintray_user")
-        key = project.findProp("bintray_api_key")
+        user = project.findProp("bintrayUser")
+        key = project.findProp("bintrayApiKey")
     } catch (e: TypeCastException) {
         return@with
     }
@@ -28,7 +28,7 @@ fun Project.setupBintrayPublish(
     setPublications(*publications)
     pkg {
         desc = findProp("description")
-        name = findProp("library_name")
+        name = findProp("libraryName")
         repo = findProp("repository")
         githubRepo = findProp("githubRepo")
         websiteUrl = findProp("websiteUrl")
