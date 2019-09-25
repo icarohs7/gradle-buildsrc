@@ -9,6 +9,7 @@ dependencies {
     val googleServicesVersion = "4.3.1"
     val bintrayPluginVersion = "1.8.4"
     val versionsPluginVersion = "0.22.0"
+    val gradleGithubPluginVersion = "4.1.1"
     val localPropertiesPluginVersion = "1.1"
     val dependencyGraphGeneratorPluginVersion = "0.5.0"
 
@@ -35,6 +36,11 @@ dependencies {
 
     //id("com.github.ben-manes.versions")
     implementation("com.github.ben-manes:gradle-versions-plugin:$versionsPluginVersion")
+
+    //id("io.freefair.github.base")
+    //id("io.freefair.github.pom")
+    //id("io.freefair.github.package-registry-maven-publish")
+    implementation("io.freefair.gradle:github-plugin:$gradleGithubPluginVersion")
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
