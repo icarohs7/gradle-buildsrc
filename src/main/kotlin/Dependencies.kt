@@ -49,6 +49,7 @@ object Deps {
     val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     val kotlinStdLibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     val kotlinxSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
+    val ktorLocations = "io.ktor:ktor-locations:${Versions.ktor}"
     val ktorServerCIO = "io.ktor:ktor-server-cio:${Versions.ktor}"
     val ktorServerCore = "io.ktor:ktor-server-core:${Versions.ktor}"
     val ktorServerGson = "io.ktor:ktor-gson:${Versions.ktor}"
