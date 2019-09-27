@@ -15,6 +15,7 @@ fun KotlinCompile<*>.useExperimentalFeatures(usedExperimentalMarkers: List<Strin
             "-Xuse-experimental=kotlin.Experimental",
             "-Xuse-experimental=kotlinx.coroutines.FlowPreview",
             "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
-            "-Xuse-experimental=kotlin.time.ExperimentalTime"
+            "-Xuse-experimental=kotlin.time.ExperimentalTime",
+            "-Xuse-experimental=io.ktor.locations.KtorExperimentalLocationsAPI"
     ) + usedExperimentalMarkers
 }

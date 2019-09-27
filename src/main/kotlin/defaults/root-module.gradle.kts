@@ -8,6 +8,7 @@ allprojects {
         maven("https://kotlin.bintray.com/kotlinx")
         maven("https://oss.sonatype.org/content/repositories/snapshots/")
         maven("https://dl.bintray.com/icarohs7/libraries")
+        maven("https://dl.bintray.com/excitement-engineer/ktor-graphql")
         jcenter()
         maven("https://jitpack.io")
     }
