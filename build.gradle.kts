@@ -10,6 +10,7 @@ dependencies {
     val bintrayPluginVersion = "1.8.4"
     val versionsPluginVersion = "0.22.0"
     val gradleGithubPluginVersion = "4.1.1"
+    val apolloGradlePluginVersion = "1.2.0-SNAPSHOT"
     val localPropertiesPluginVersion = "1.1"
     val dependencyGraphGeneratorPluginVersion = "0.5.0"
 
@@ -42,19 +43,23 @@ dependencies {
     //id("io.freefair.github.package-registry-maven-publish")
     implementation("io.freefair.gradle:github-plugin:$gradleGithubPluginVersion")
 
+    //id("com.apollographql.apollo")
+    implementation("com.apollographql.apollo:apollo-gradle-plugin-incubating:$apolloGradlePluginVersion")
+
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
-                           ":local-properties-plugin" +
-                           ":$localPropertiesPluginVersion")
+            ":local-properties-plugin" +
+            ":$localPropertiesPluginVersion")
 
     //id("com.vanniktech.dependency.graph.generator")
     implementation("gradle.plugin.com.vanniktech" +
-                           ":gradle-dependency-graph-generator-plugin" +
-                           ":$dependencyGraphGeneratorPluginVersion")
+            ":gradle-dependency-graph-generator-plugin" +
+            ":$dependencyGraphGeneratorPluginVersion")
 }
 
 repositories {
     google()
-    jcenter()
     gradlePluginPortal()
+    maven("https://oss.sonatype.org/content/repositories/snapshots/")
+    jcenter()
 }
