@@ -402,7 +402,7 @@ object Versions {
     val jodaTime = "2.10.3"
     val kaml = "0.8.0"
     val kFormMaster = "6.1.1"
-    val kGraphQL = "0.6.6"
+    val kGraphQL = "0.7.0"
     val khronos = "0.9.0"
     val kidAdapter = "1.1.5"
     val kodaTime = "2.0.0"
