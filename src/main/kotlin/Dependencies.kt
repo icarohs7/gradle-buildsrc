@@ -350,13 +350,13 @@ object JSDeps {
 }
 
 object Versions {
-    val androidSpeedDial = "3.1.0"
+    val androidSpeedDial = "3.1.1"
     val androidToggle = "1.1.0"
     val androidxCore = "1.1.0-rc02"
     val androidxPreference = "1.1.0"
     val anko = "0.10.8"
     val anotherViewPager = "1.0.2"
-    val apollo = "1.1.3"
+    val apollo = "1.2.0"
     val appCompat = "1.1.0-rc01"
     val arrow = "0.9.0"
     val awsPlatform = "1.11.228"
@@ -420,7 +420,7 @@ object Versions {
     val litho = "0.30.0"
     val logback = "1.2.3"
     val maskEditText = "1.1.1"
-    val materialComponents = "1.1.0-alpha10"
+    val materialComponents = "1.1.0-beta01"
     val materialDialogs = "3.1.1"
     val materialDrawer = "6.1.2"
     val materialDrawerKt = "2.0.2"
@@ -432,7 +432,7 @@ object Versions {
     val microsoftSqlServerJdbc = "7.4.1.jre8"
     val mvRx = "1.1.0"
     val navigation = "2.2.0-alpha03"
-    val okHttp = "4.2.1"
+    val okHttp = "4.2.2"
     val okio = "2.2.2"
     val passcodeView = "1.2.1"
     val persistentSearch = "1.1.0-SNAPSHOT"
