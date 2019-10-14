@@ -444,7 +444,7 @@ object Versions {
     val materialSpinner = "1.3.1"
     val microsoftSqlServerJdbc = "7.4.1.jre8"
     val multiLineRadioGroup = "1.0.0.6"
-    val mvRx = "1.2.0"
+    val mvRx = "1.2.1"
     val navigation = "2.2.0-beta01"
     val okHttp = "4.2.2"
     val okio = "2.2.2"
