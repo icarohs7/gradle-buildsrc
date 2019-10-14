@@ -47,6 +47,7 @@ object Deps {
     val koinKtor = "org.koin:koin-ktor:${Versions.koin}"
     val kotlinEvents = "com.github.halcyxn:kotlin-events:${Versions.kotlinEvents}"
     val kotlinFlowExtensions = "com.github.akarnokd:kotlin-flow-extensions:${Versions.kotlinFlowExtensions}"
+    val kotlinReflection = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
     val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     val kotlinStdLibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     val kotlinxSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.kotlinxSerialization}"
