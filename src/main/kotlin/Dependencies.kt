@@ -492,8 +492,8 @@ object Versions {
     val jacoco = "0.8.5"
     val kotlinAssertUtils = "0.9.0"
     val mockK = "1.9.2"
-    val robolectric = "4.3"
-    val testCore = "1.2.0"
+    val robolectric = "4.3.1"
+    val testCore = "1.2.1-alpha02"
     val testFx = "4.0.16-alpha"
 
     val espresso = "3.2.0"

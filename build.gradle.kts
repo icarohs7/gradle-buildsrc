@@ -3,7 +3,9 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.6.0-beta01"
+    //https://github.com/robolectric/robolectric/issues/5299
+    // CI: 3.6.0-alpha12 IDE: 3.6.0-beta01
+    val gradlePluginVersion = "3.6.0-alpha12"
     val kotlinVersion = "1.3.50"
     val navigationVersion = "2.2.0-alpha01"
     val googleServicesVersion = "4.3.1"
