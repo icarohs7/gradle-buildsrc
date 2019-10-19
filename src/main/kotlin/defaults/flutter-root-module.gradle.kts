@@ -4,6 +4,4 @@ plugins {
     id("defaults.root-module")
 }
 
-rootProject.buildDir = file("../build")
-subprojects { project.buildDir = file("${rootProject.buildDir}/${project.name}") }
-subprojects { project.evaluationDependsOn(":app") }
+apply(from = "$rootDir/buildSrc/groovy/flutter-root-module.gradle")

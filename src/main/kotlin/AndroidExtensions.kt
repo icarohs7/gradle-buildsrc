@@ -51,7 +51,7 @@ var Project.applicationId: String
         }
     }
 
-fun Project.configureDefaultAndroid() {
+internal fun Project.configureDefaultAndroid() {
     compileKotlin {
         useExperimentalFeatures()
         kotlinOptions {
