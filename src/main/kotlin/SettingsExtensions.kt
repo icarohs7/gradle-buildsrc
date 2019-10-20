@@ -1,6 +1,4 @@
 import org.gradle.api.initialization.Settings
-import java.io.File
-import java.util.Properties
 
 fun Settings.setupKotlinSettings(version: String = Versions.kotlin) {
     pluginManagement {

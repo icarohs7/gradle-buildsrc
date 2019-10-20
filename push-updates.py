@@ -10,6 +10,6 @@ confirm = str(input("Confirm upload of new version? [Y/N]")).lower()
 
 if confirm == "y":
     system(f"git commit -m \"auto commit push on {d} {t}\"")
-    system("git push origin master")
+    system("git push origin flutter")
     print("\ndone\n")
     system("pause")
