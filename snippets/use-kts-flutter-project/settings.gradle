@@ -1,0 +1,4 @@
+include(":app")
+
+apply(from: "$rootDir/buildSrc/groovy/flutter-settings-script.gradle")
+SettingsExtensionsKt.setupKotlinSettings(settings, Versions.kotlin)

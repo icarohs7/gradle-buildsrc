@@ -10,7 +10,3 @@ fun Settings.setupKotlinSettings(version: String = Versions.kotlin) {
         }
     }
 }
-
-fun Settings.setupFlutterSettings() {
-    apply(mapOf("from" to "$rootDir/buildSrc/groovy/flutter-settings-script.gradle"))
-}

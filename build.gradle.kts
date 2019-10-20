@@ -19,9 +19,6 @@ dependencies {
     //Use on last line of buildscript file
     //apply(plugin = "com.google.gms.google-services")
     implementation("com.google.gms:google-services:$googleServicesVersion")
-
-    //id("com.github.ben-manes.versions")
-    implementation("com.github.ben-manes:gradle-versions-plugin:$versionsPluginVersion")
 }
 
 repositories {
