@@ -47,13 +47,7 @@ var Project.applicationId: String
         }
     }
 
-internal fun Project.configureDefaultAndroid() {
-    compileKotlin {
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
-    }
-
+fun Project.configureDefaultAndroid() {
     extensions.configure<AndroidBlock>("android") {
         sourceSets["main"].java.srcDir("src/main/kotlin")
         sourceSets["test"].java.srcDir("src/test/kotlin")
@@ -75,11 +69,6 @@ internal fun Project.configureDefaultAndroid() {
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_1_8
             targetCompatibility = JavaVersion.VERSION_1_8
-        }
-
-        lintOptions {
-            isAbortOnError = false
-            isCheckReleaseBuilds = false
         }
 
         packagingOptions {

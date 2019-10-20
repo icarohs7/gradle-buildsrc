@@ -5,7 +5,6 @@ plugins {
 }
 
 android {
-    dataBinding.isEnabled = false
     applicationId = "company.appName" //TODO full app name here
 }
 
