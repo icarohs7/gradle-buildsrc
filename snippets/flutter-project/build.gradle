@@ -1,5 +1,8 @@
-plugins {
-    id("defaults.root-module")
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
 }
 
 rootProject.buildDir = '../build'

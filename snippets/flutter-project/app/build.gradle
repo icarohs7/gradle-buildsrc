@@ -21,9 +21,13 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    compileSdkVersion Versions.compileSdk
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -33,6 +37,9 @@ android {
     }
 
     defaultConfig {
+        applicationId "company.appname" //TODO full app name here
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -40,6 +47,7 @@ android {
 
     buildTypes {
         release {
+            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
@@ -50,18 +58,8 @@ flutter {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-}
-
-task copyDebugApk(type: Copy) {
-    from "${rootProject.buildDir}/${project.name}/outputs/apk"
-    into "$projectDir/build/outputs/apk"
-    eachFile { path = name }
-    includeEmptyDirs = false
-}
-
-afterEvaluate {
-    assembleDebug.finalizedBy(copyDebugApk)
+    implementation(Deps.kotlinStdLib)
+    testImplementation(TestDeps.junit)
+    androidTestImplementation(AndroidTestDeps.testRunner)
+    androidTestImplementation(AndroidTestDeps.espressoCore)
 }
