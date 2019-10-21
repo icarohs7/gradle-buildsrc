@@ -67,15 +67,15 @@ internal fun Project.configureDefaultAndroid() {
 
         defaultConfig {
             //            javaCompileOptions {
-//                annotationProcessorOptions {
-//                    arguments.plusAssign(mapOf(
-//                            "room.incremental" to "true"
-//                    ))
-//                }
-//            }
+            //                annotationProcessorOptions {
+            //                    arguments.plusAssign(mapOf(
+            //                            "room.incremental" to "true"
+            //                    ))
+            //                }
+            //            }
             minSdkVersion(21)
             targetSdkVersion(29)
-//            testInstrumentationRunnerArguments.plusAssign("clearPackageData" to "true")
+            //            testInstrumentationRunnerArguments.plusAssign("clearPackageData" to "true")
             versionCode = 1
             versionName = "1.0"
         }
@@ -97,22 +97,22 @@ internal fun Project.configureDefaultAndroid() {
             targetCompatibility = JavaVersion.VERSION_1_8
         }
 
-//        testOptions {
-//            execution = "ANDROIDX_TEST_ORCHESTRATOR"
-//            unitTests.apply {
-//                isIncludeAndroidResources = true
-//                isReturnDefaultValues = true
-//                all(object : Closure<Test>(this, this) {
-//                    @Suppress("unused") // Called by groovy's dark magic
-//                    fun doCall(test: Test): Unit = with(test) {
-//                        testLogging {
-//                            events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
-//                            exceptionFormat = TestExceptionFormat.FULL
-//                        }
-//                    }
-//                })
-//            }
-//        }
+        testOptions {
+            //            execution = "ANDROIDX_TEST_ORCHESTRATOR"
+            unitTests.apply {
+                isIncludeAndroidResources = true
+                isReturnDefaultValues = true
+                all(object : Closure<Test>(this, this) {
+                    @Suppress("unused") // Called by groovy's dark magic
+                    fun doCall(test: Test): Unit = with(test) {
+                        testLogging {
+                            events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
+                            exceptionFormat = TestExceptionFormat.FULL
+                        }
+                    }
+                })
+            }
+        }
 
         lintOptions {
             isAbortOnError = false

@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.5.1"
+    val gradlePluginVersion = "3.6.0-beta01"
     val kotlinVersion = "1.3.50"
     val navigationVersion = "2.2.0-alpha01"
     val googleServicesVersion = "4.3.1"
@@ -12,7 +12,6 @@ dependencies {
     val gradleGithubPluginVersion = "4.1.1"
     val apolloGradlePluginVersion = "1.2.0-SNAPSHOT"
     val localPropertiesPluginVersion = "1.1"
-    val dependencyGraphGeneratorPluginVersion = "0.5.0"
 
     implementation(gradleApi())
 
@@ -41,7 +40,7 @@ dependencies {
     //id("io.freefair.github.base")
     //id("io.freefair.github.pom")
     //id("io.freefair.github.package-registry-maven-publish")
-    implementation("io.freefair.gradle:github-plugin:$gradleGithubPluginVersion")
+    //    implementation("io.freefair.gradle:github-plugin:$gradleGithubPluginVersion")
 
     //id("com.apollographql.apollo")
     implementation("com.apollographql.apollo:apollo-gradle-plugin-incubating:$apolloGradlePluginVersion")
@@ -50,11 +49,6 @@ dependencies {
     implementation("gradle.plugin.com.github.b3er.local.properties" +
             ":local-properties-plugin" +
             ":$localPropertiesPluginVersion")
-
-    //id("com.vanniktech.dependency.graph.generator")
-    implementation("gradle.plugin.com.vanniktech" +
-            ":gradle-dependency-graph-generator-plugin" +
-            ":$dependencyGraphGeneratorPluginVersion")
 }
 
 repositories {

@@ -1,3 +1,0 @@
-plugins {
-    id("defaults.flutter-root-module")
-}

@@ -387,7 +387,7 @@ object Versions {
     val clikt = "1.7.0"
     val coil = "0.7.0"
     val constraintLayout = "2.0.0-beta2"
-    val coroutines = "1.3.2"
+    val coroutines = "1.3.1"
     val crunchyCalendar = "2.0.0"
     val cryptoPrefs = "1.3.2.5"
     val currencyEditText = "2.0.2"
