@@ -47,11 +47,20 @@ android {
 
     buildTypes {
         release {
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
 }
+
+// AndroidExtensionsKt.enableProguard(android)
+// AndroidExtensionsKt.addReleaseCertificate(
+//         android,
+//         project,
+//         "keystore file name (folder: project root)",
+//         "storePassword",
+//         "keyAlias",
+//         "keyPassword"
+// )
 
 flutter {
     source '../..'
