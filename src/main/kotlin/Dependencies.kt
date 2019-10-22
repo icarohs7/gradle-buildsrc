@@ -385,7 +385,7 @@ object Versions {
     val chucker = "3.0.1"
     val circularImageView = "1.4"
     val clikt = "1.7.0"
-    val coil = "0.7.0"
+    val coil = "0.8.0"
     val constraintLayout = "2.0.0-beta2"
     val coroutines = "1.3.1"
     val crunchyCalendar = "2.0.0"
