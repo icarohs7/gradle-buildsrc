@@ -1,50 +1,19 @@
-def localProperties = new Properties()
-def localPropertiesFile = rootProject.file('local.properties')
-if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
-        localProperties.load(reader)
-    }
-}
-
-def flutterRoot = localProperties.getProperty('flutter.sdk')
+def localProperties = ExtensionsKt.readPropertiesFile(rootProject.file("local.properties"))
+def flutterRoot = localProperties.getProperty("flutter.sdk")
 if (flutterRoot == null) {
-    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+    throw new GradleException("Flutter SDK not found. " +
+            "Define location with flutter.sdk in the local.properties file.")
 }
 
-def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
-}
-
-def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
-}
-
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
+ExtensionsKt.setupFlutterAndroidModuleSettings(project, localProperties)
 android {
-    compileSdkVersion Versions.compileSdk
-
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
-
-    lintOptions {
-        disable 'InvalidPackage'
-    }
-
     defaultConfig {
         applicationId "company.appname" //TODO full app name here
-        minSdkVersion Versions.minSdk
-        targetSdkVersion Versions.targetSdk
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             signingConfig signingConfigs.debug
@@ -61,14 +30,3 @@ android {
 //         "keyAlias",
 //         "keyPassword"
 // )
-
-flutter {
-    source '../..'
-}
-
-dependencies {
-    implementation(Deps.kotlinStdLib)
-    testImplementation(TestDeps.junit)
-    androidTestImplementation(AndroidTestDeps.testRunner)
-    androidTestImplementation(AndroidTestDeps.espressoCore)
-}
