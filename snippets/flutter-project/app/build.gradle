@@ -52,8 +52,8 @@ android {
     }
 }
 
-// AndroidExtensionsKt.enableProguard(android)
-// AndroidExtensionsKt.addReleaseCertificate(
+// ExtensionsKt.enableProguard(android)
+// ExtensionsKt.addReleaseCertificate(
 //         android,
 //         project,
 //         "keystore file name (folder: project root)",
