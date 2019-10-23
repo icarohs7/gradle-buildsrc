@@ -1,7 +1,9 @@
 import org.gradle.api.Project
 import org.gradle.api.initialization.Settings
+import org.gradle.api.tasks.Delete
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 import org.gradle.kotlin.dsl.get
+import org.gradle.kotlin.dsl.repositories
 import org.gradle.kotlin.dsl.withGroovyBuilder
 import java.io.File
 import java.util.Properties
@@ -95,5 +97,24 @@ fun Settings.setupFlutterSettings() {
         val pluginDirectory = flutterProjectRoot.resolve(path).resolve("android")
         include(":$name")
         project(":$name").projectDir = pluginDirectory
+    }
+}
+
+fun Project.setupFlutterRootProject() {
+    allprojects {
+        repositories {
+            google()
+            jcenter()
+        }
+    }
+    rootProject.buildDir = file("../build")
+    subprojects {
+        project.buildDir = file("${rootProject.buildDir}/${project.name}")
+    }
+    subprojects {
+        project.evaluationDependsOn(":app")
+    }
+    tasks.maybeCreate("clean", Delete::class.java).apply {
+        doLast { delete(rootProject.buildDir) }
     }
 }
