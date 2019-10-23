@@ -1,4 +1,5 @@
 import org.gradle.api.Project
+import org.gradle.api.initialization.Settings
 import org.gradle.kotlin.dsl.DependencyHandlerScope
 import org.gradle.kotlin.dsl.get
 import org.gradle.kotlin.dsl.withGroovyBuilder
@@ -79,5 +80,16 @@ fun Project.setupFlutterAndroidModuleSettings(localProperties: Properties) {
         "testImplementation"(TestDeps.junit)
         "androidTestImplementation"(AndroidTestDeps.testRunner)
         "androidTestImplementation"(AndroidTestDeps.espressoCore)
+    }
+}
+
+fun Settings.setupFlutterSettings() {
+    val flutterProjectRoot: File = rootProject.projectDir.parentFile
+    val pluginsFile = flutterProjectRoot.resolve(".flutter-plugins")
+    val plugins = readPropertiesFile(pluginsFile)
+    plugins.map { Pair("${it.key}", "${it.value}") }.forEach { (name, path) ->
+        val pluginDirectory = flutterProjectRoot.resolve(path).resolve("android")
+        include(":$name")
+        project(":$name").projectDir = pluginDirectory
     }
 }
