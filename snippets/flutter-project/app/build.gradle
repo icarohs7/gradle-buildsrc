@@ -9,21 +9,20 @@ apply plugin: "com.android.application"
 apply plugin: "kotlin-android"
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
-ExtensionsKt.setupFlutterAndroidModuleSettings(project, localProperties)
+ExtensionsKt.setupFlutterAndroidModuleSettings(
+        project,
+        localProperties,
+        "company.appname" //TODO full app name here
+)
 android {
-    defaultConfig {
-        applicationId "company.appname" //TODO full app name here
-    }
     buildTypes {
         release {
             signingConfig signingConfigs.debug
         }
     }
 }
-
 // ExtensionsKt.enableProguard(android)
 // ExtensionsKt.addReleaseCertificate(
-//         android,
 //         project,
 //         "keystore file name (folder: project root)",
 //         "storePassword",
