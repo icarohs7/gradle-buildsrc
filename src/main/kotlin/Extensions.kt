@@ -8,35 +8,38 @@ import java.util.Properties
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
-fun AndroidBlock.addReleaseCertificate(
-        project: Project,
+fun Project.addReleaseCertificate(
         storeFilePath: String,
         storePassword: String,
         keyAlias: String,
         keyPassword: String
 ) {
-    signingConfigs {
-        create("release") {
-            this.storeFile = File("${project.rootProject.rootDir}/$storeFilePath")
-            this.storePassword = storePassword
-            this.keyAlias = keyAlias
-            this.keyPassword = keyPassword
+    extensions.configure<AndroidBlock>("android") {
+        signingConfigs {
+            create("release") {
+                this.storeFile = File("${project.rootProject.rootDir}/$storeFilePath")
+                this.storePassword = storePassword
+                this.keyAlias = keyAlias
+                this.keyPassword = keyPassword
+            }
         }
-    }
 
-    buildTypes {
-        getByName("release") {
-            signingConfig = signingConfigs["release"]
+        buildTypes {
+            getByName("release") {
+                signingConfig = signingConfigs["release"]
+            }
         }
     }
 }
 
-fun AndroidApplicationBlock.enableProguard() {
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            isShrinkResources = true
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+fun Project.enableProguard() {
+    extensions.configure<AndroidBlock>("android") {
+        buildTypes {
+            getByName("release") {
+                isMinifyEnabled = true
+                isShrinkResources = true
+                proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+            }
         }
     }
 }
@@ -47,7 +50,7 @@ fun readPropertiesFile(file: File): Properties {
     }
 }
 
-fun Project.setupFlutterAndroidModuleSettings(localProperties: Properties) {
+fun Project.setupFlutterAndroidModuleSettings(localProperties: Properties, appId: String) {
     val flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "1"
     val flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0"
 
@@ -63,6 +66,7 @@ fun Project.setupFlutterAndroidModuleSettings(localProperties: Properties) {
         defaultConfig {
             minSdkVersion(Versions.minSdk)
             targetSdkVersion(Versions.targetSdk)
+            applicationId = appId
             versionCode = flutterVersionCode.toInt()
             versionName = flutterVersionName
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
