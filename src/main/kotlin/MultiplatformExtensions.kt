@@ -16,9 +16,9 @@ fun KotlinMultiplatformExtension.setupMetadataTarget(rootProject: Project, proje
 }
 
 fun KotlinMultiplatformExtension.setupAndroidTarget(
-        rootProject: Project,
-        project: Project,
-        artifactId: String
+    rootProject: Project,
+    project: Project,
+    artifactId: String
 ) {
     android {
         mavenPublication { this.artifactId = artifactId }

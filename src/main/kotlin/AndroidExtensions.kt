@@ -10,11 +10,11 @@ import com.android.build.gradle.AppExtension as AndroidApplicationBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
 fun AndroidBlock.addReleaseCertificate(
-        project: Project,
-        storeFilePath: String,
-        storePassword: String,
-        keyAlias: String,
-        keyPassword: String
+    project: Project,
+    storeFilePath: String,
+    storePassword: String,
+    keyAlias: String,
+    keyPassword: String
 ) {
     signingConfigs {
         create("release") {

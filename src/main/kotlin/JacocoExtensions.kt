@@ -20,9 +20,9 @@ fun Project.setupJacocoMultimodule(block: JacocoReport.() -> Unit = {}): Unit = 
 
     create<JacocoReport>("jacocoRootReport") {
         val subprojectsJacocoReportTasks = getTasksByName("jacocoTestReport", true)
-                .asSequence()
-                .mapNotNull { it as? JacocoReport }
-                .toList()
+            .asSequence()
+            .mapNotNull { it as? JacocoReport }
+            .toList()
 
         dependsOn(subprojectsJacocoReportTasks)
 
@@ -61,23 +61,23 @@ fun Project.setupJacoco(block: JacocoReport.() -> Unit = {}): Unit = tasks {
         }
 
         val excludes = listOf(
-                "**/R.class",
-                "**/R\$*.class",
-                "**/*\$ViewInjector*.*",
-                "**/BuildConfig.*",
-                "**/Manifest*.*",
-                "**/*Test*.*",
-                "android/**/*.*"
+            "**/R.class",
+            "**/R\$*.class",
+            "**/*\$ViewInjector*.*",
+            "**/BuildConfig.*",
+            "**/Manifest*.*",
+            "**/*Test*.*",
+            "android/**/*.*"
         )
 
         classDirectories.setFrom(
-                fileTree("$buildDir/intermediates/classes/debug") { exclude(excludes) },
-                fileTree("$buildDir/tmp/kotlin-classes/debug") { exclude(excludes) },
-                fileTree("$buildDir/classes/kotlin/") { exclude(excludes) }
+            fileTree("$buildDir/intermediates/classes/debug") { exclude(excludes) },
+            fileTree("$buildDir/tmp/kotlin-classes/debug") { exclude(excludes) },
+            fileTree("$buildDir/classes/kotlin/") { exclude(excludes) }
         )
 
         executionData.setFrom(
-                fileTree("$buildDir/jacoco") { include("*.exec") }
+            fileTree("$buildDir/jacoco") { include("*.exec") }
         )
 
         block()

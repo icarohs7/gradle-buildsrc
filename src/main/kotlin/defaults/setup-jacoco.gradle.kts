@@ -12,12 +12,12 @@ setupJacoco {
 
     if (androidBlock != null) {
         sourceDirectories.setFrom(files(
-                androidBlock.sourceSets["main"].java.srcDirs,
-                "src/main/kotlin"
+            androidBlock.sourceSets["main"].java.srcDirs,
+            "src/main/kotlin"
         ))
     } else {
         sourceDirectories.setFrom(files(
-                "src/main/kotlin"
+            "src/main/kotlin"
         ))
     }
 }

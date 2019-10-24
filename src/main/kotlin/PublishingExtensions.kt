@@ -7,10 +7,10 @@ import org.gradle.kotlin.dsl.delegateClosureOf
 import org.gradle.kotlin.dsl.withType
 
 fun Project.setupBintrayPublish(
-        bintrayExtension: BintrayExtension,
-        vararg publications: String = arrayOf(""),
-        pomBlock: MavenPublication.() -> Unit = {},
-        block: BintrayExtension.() -> Unit = {}
+    bintrayExtension: BintrayExtension,
+    vararg publications: String = arrayOf(""),
+    pomBlock: MavenPublication.() -> Unit = {},
+    block: BintrayExtension.() -> Unit = {}
 ): Unit = with(bintrayExtension) {
     try {
         user = project.findProp("bintrayUser")

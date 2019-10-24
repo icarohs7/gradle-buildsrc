@@ -12,10 +12,10 @@ fun AbstractKotlinCompilation<*>.setupMetaInfoName(rootProject: Project, project
  */
 fun KotlinCompile<*>.useExperimentalFeatures(usedExperimentalMarkers: List<String> = emptyList()) {
     kotlinOptions.freeCompilerArgs += listOf(
-            "-Xuse-experimental=kotlin.Experimental",
-            "-Xuse-experimental=kotlinx.coroutines.FlowPreview",
-            "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
-            "-Xuse-experimental=kotlin.time.ExperimentalTime",
-            "-Xuse-experimental=io.ktor.locations.KtorExperimentalLocationsAPI"
+        "-Xuse-experimental=kotlin.Experimental",
+        "-Xuse-experimental=kotlinx.coroutines.FlowPreview",
+        "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "-Xuse-experimental=kotlin.time.ExperimentalTime",
+        "-Xuse-experimental=io.ktor.locations.KtorExperimentalLocationsAPI"
     ) + usedExperimentalMarkers
 }
