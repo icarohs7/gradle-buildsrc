@@ -10,6 +10,7 @@ allprojects {
         maven("https://dl.bintray.com/icarohs7/libraries")
         maven("https://dl.bintray.com/excitement-engineer/ktor-graphql")
         maven("http://dl.bintray.com/apollographql/android")
+        maven("https://dl.bintray.com/kotlin/kotlin-eap")
         jcenter()
         maven("https://jitpack.io")
     }

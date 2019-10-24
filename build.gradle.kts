@@ -3,8 +3,8 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.6.0-beta01"
-    val kotlinVersion = "1.3.50"
+    val gradlePluginVersion = "4.0.0-alpha01"
+    val kotlinVersion = "1.3.60-eap-25"
     val navigationVersion = "2.2.0-alpha01"
     val googleServicesVersion = "4.3.1"
     val bintrayPluginVersion = "1.8.4"
@@ -55,5 +55,6 @@ repositories {
     google()
     gradlePluginPortal()
     maven("https://oss.sonatype.org/content/repositories/snapshots/")
+    maven("https://dl.bintray.com/kotlin/kotlin-eap")
     jcenter()
 }

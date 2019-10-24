@@ -318,10 +318,13 @@ object AndroidKaptDeps {
             "androidx.room:room-compiler:${Versions.room}"
     )
 
-    val androidxComposeCompiler = "androidx.compose:compose-compiler:${Versions.androidxCompose}"
     val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
     val litho = "com.facebook.litho:litho-processor:${Versions.litho}"
     val lithoSections = "com.facebook.litho:litho-sections-processor:${Versions.litho}"
+}
+
+object KotlinPluginDeps {
+    val androidxComposeCompiler = "androidx.compose:compose-compiler:${Versions.androidxCompose}"
 }
 
 object TestDeps {
@@ -369,10 +372,10 @@ object JSDeps {
 object Versions {
     val androidSpeedDial = "3.1.1"
     val androidToggle = "1.1.0"
-    val androidxCompose = "0.1.0-dev01"
+    val androidxCompose = "0.1.0-dev02"
     val androidxCore = "1.1.0-rc02"
     val androidxPreference = "1.1.0"
-    val androidxUi = "0.1.0-dev01"
+    val androidxUi = "0.1.0-dev02"
     val anko = "0.10.8"
     val anotherViewPager = "1.0.2"
     val apollo = "1.2.0"
@@ -403,7 +406,7 @@ object Versions {
     val flashBar = "1.0.3"
     val flexboxLayout = "1.1.1"
     val floatingSearchView = "2.1.1"
-    val fragment = "1.2.0-beta02"
+    val fragment = "1.2.0-rc01"
     val fuel = "2.0.0"
     val fullscreenDialog = "1.0.0"
     val glide = "4.8.0"
@@ -434,12 +437,12 @@ object Versions {
     val kotpref = "2.9.2"
     val ktor = "1.2.4"
     val ktorServerGraphQL = "0.2.4"
-    val lifecycle = "2.2.0-beta01"
+    val lifecycle = "2.2.0-rc01"
     val lightCalendarView = "1.0.1"
     val litho = "0.30.0"
     val logback = "1.2.3"
     val maskEditText = "1.1.1"
-    val materialComponents = "1.1.0-beta01"
+    val materialComponents = "1.2.0-alpha01"
     val materialDialogs = "3.1.1"
     val materialDrawer = "6.1.2"
     val materialDrawerKt = "2.0.2"
@@ -450,7 +453,7 @@ object Versions {
     val microsoftSqlServerJdbc = "7.4.1.jre8"
     val multiLineRadioGroup = "1.0.0.6"
     val mvRx = "1.3.0"
-    val navigation = "2.2.0-beta01"
+    val navigation = "2.2.0-rc01"
     val okHttp = "4.2.2"
     val okio = "2.2.2"
     val passcodeView = "1.2.1"
@@ -460,10 +463,10 @@ object Versions {
     val pugNotification = "1.8.1"
     val quantum = "1.0.0"
     val reactiveLocation2 = "2.1"
-    val recyclerView = "1.1.0-beta05"
+    val recyclerView = "1.1.0-rc01"
     val retrofit = "2.6.2"
     val retrofitKotlinxSerializationConverter = "0.4.0"
-    val room = "2.2.0"
+    val room = "2.2.1"
     val rxAndroid = "2.1.1"
     val rxBinding = "3.0.0-alpha2"
     val rxJava = "2.2.12"
@@ -491,7 +494,7 @@ object Versions {
     val unoxCore = "3.20-next.4"
     val unoxJavafxArch = "0.10-next.1"
     val viewAnimator = "1.1.1"
-    val workManager = "2.3.0-alpha02"
+    val workManager = "2.3.0-alpha03"
 
     val barista = "3.1.0"
     val fixd = "1.0.5"
