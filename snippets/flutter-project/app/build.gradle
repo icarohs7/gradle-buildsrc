@@ -17,6 +17,7 @@ ExtensionsKt.setupFlutterAndroidModuleSettings(
 android {
     buildTypes {
         release {
+            minifyEnabled false
             signingConfig signingConfigs.debug //Remove when adding a valid certificate
         }
     }
