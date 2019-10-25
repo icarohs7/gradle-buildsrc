@@ -103,12 +103,13 @@ fun Project.setupFlutterAndroidModuleSettings(localProperties: Properties, appId
 fun Settings.setupFlutterSettings() {
     val flutterProjectRoot: File = rootProject.projectDir.parentFile
     val pluginsFile = flutterProjectRoot.resolve(".flutter-plugins")
-    if (!pluginsFile.exists()) return
-    val plugins = readPropertiesFile(pluginsFile)
-    plugins.map { Pair("${it.key}", "${it.value}") }.forEach { (name, path) ->
-        val pluginDirectory = flutterProjectRoot.resolve(path).resolve("android")
-        include(":$name")
-        project(":$name").projectDir = pluginDirectory
+    if (pluginsFile.exists()) {
+        val plugins = readPropertiesFile(pluginsFile)
+        plugins.map { Pair("${it.key}", "${it.value}") }.forEach { (name, path) ->
+            val pluginDirectory = flutterProjectRoot.resolve(path).resolve("android")
+            include(":$name")
+            project(":$name").projectDir = pluginDirectory
+        }
     }
 }
 
