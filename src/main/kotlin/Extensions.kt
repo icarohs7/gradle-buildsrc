@@ -46,6 +46,17 @@ fun Project.enableProguard() {
     }
 }
 
+fun Project.disableProguard() {
+    extensions.configure<AndroidBlock>("android") {
+        buildTypes {
+            getByName("release") {
+                isMinifyEnabled = false
+                isShrinkResources = false
+            }
+        }
+    }
+}
+
 fun readPropertiesFile(file: File): Properties {
     return Properties().apply {
         load(file.reader(Charsets.UTF_8))
