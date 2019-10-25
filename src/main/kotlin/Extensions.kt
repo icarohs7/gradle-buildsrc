@@ -104,6 +104,8 @@ fun Project.setupFlutterRootProject() {
     allprojects {
         repositories {
             google()
+            mavenCentral()
+            maven("https://dl.bintray.com/kotlin/kotlin-eap")
             jcenter()
         }
     }
