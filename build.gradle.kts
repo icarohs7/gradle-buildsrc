@@ -47,8 +47,8 @@ dependencies {
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
-                           ":local-properties-plugin" +
-                           ":$localPropertiesPluginVersion")
+                       ":local-properties-plugin" +
+                       ":$localPropertiesPluginVersion")
 }
 
 repositories {

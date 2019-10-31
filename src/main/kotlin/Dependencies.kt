@@ -169,7 +169,7 @@ object AndroidDeps {
     val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     val googlePlayCore = "com.google.android.play:core:${Versions.googlePlayCore}"
     val googlePlayServicesLocation =
-            "com.google.android.gms:play-services-location:${Versions.googlePlayServicesLocation}"
+        "com.google.android.gms:play-services-location:${Versions.googlePlayServicesLocation}"
     val googlePlayServicesMaps = "com.google.android.gms:play-services-maps:${Versions.googlePlayServicesMaps}"
     val googlePlayServicesPlaces = "com.google.android.gms:play-services-places:${Versions.googlePlayServicesPlaces}"
     val helloCharts = "com.github.lecho:hellocharts-android:${Versions.helloCharts}"
@@ -252,7 +252,7 @@ object AndroidDeps {
     val splittiesAlertdialog = "com.louiscad.splitties:splitties-alertdialog:${Versions.splitties}"
     val splittiesAlertdialogAppcompat = "com.louiscad.splitties:splitties-alertdialog-appcompat:${Versions.splitties}"
     val splittiesAlertdialogAppcompatCoroutines =
-            "com.louiscad.splitties:splitties-alertdialog-appcompat-coroutines:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-alertdialog-appcompat-coroutines:${Versions.splitties}"
     val splittiesAppctx = "com.louiscad.splitties:splitties-appctx:${Versions.splitties}"
     val splittiesArchLifecycle = "com.louiscad.splitties:splitties-arch-lifecycle:${Versions.splitties}"
     val splittiesArchRoom = "com.louiscad.splitties:splitties-arch-room:${Versions.splitties}"
@@ -283,22 +283,22 @@ object AndroidDeps {
     val splittiesViewsCardview = "com.louiscad.splitties:splitties-views-cardview:${Versions.splitties}"
     val splittiesViewsCoroutines = "com.louiscad.splitties:splitties-views-coroutines:${Versions.splitties}"
     val splittiesViewsCoroutinesMaterial =
-            "com.louiscad.splitties:splitties-views-coroutines-material:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-views-coroutines-material:${Versions.splitties}"
     val splittiesViewsDsl = "com.louiscad.splitties:splitties-views-dsl:${Versions.splitties}"
     val splittiesViewsDslAppcompat = "com.louiscad.splitties:splitties-views-dsl-appcompat:${Versions.splitties}"
     val splittiesViewsDslConstraintlayout =
-            "com.louiscad.splitties:splitties-views-dsl-constraintlayout:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-views-dsl-constraintlayout:${Versions.splitties}"
     val splittiesViewsDslCoordinatorlayout =
-            "com.louiscad.splitties:splitties-views-dsl-coordinatorlayout:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-views-dsl-coordinatorlayout:${Versions.splitties}"
     val splittiesViewsDslMaterial = "com.louiscad.splitties:splitties-views-dsl-material:${Versions.splitties}"
     val splittiesViewsDslRecyclerview = "com.louiscad.splitties:splitties-views-dsl-recyclerview:${Versions.splitties}"
     val splittiesViewsMaterial = "com.louiscad.splitties:splitties-views-material:${Versions.splitties}"
     val splittiesViewsRecyclerview = "com.louiscad.splitties:splitties-views-recyclerview:${Versions.splitties}"
     val splittiesViewsSelectable = "com.louiscad.splitties:splitties-views-selectable:${Versions.splitties}"
     val splittiesViewsSelectableAppcompat =
-            "com.louiscad.splitties:splitties-views-selectable-appcompat:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-views-selectable-appcompat:${Versions.splitties}"
     val splittiesViewsSelectableConstraintlayout =
-            "com.louiscad.splitties:splitties-views-selectable-constraintlayout:${Versions.splitties}"
+        "com.louiscad.splitties:splitties-views-selectable-constraintlayout:${Versions.splitties}"
     val spotsDialog = "com.github.d-max:spots-dialog:${Versions.spotsdialog}@aar"
     val stateViews = "com.github.kobeumut:StateViews:${Versions.stateViews}"
     val stetho = "com.facebook.stetho:stetho:${Versions.stetho}"
@@ -315,7 +315,7 @@ object AndroidDeps {
 
 object AndroidKaptDeps {
     val core = listOf(
-            "androidx.room:room-compiler:${Versions.room}"
+        "androidx.room:room-compiler:${Versions.room}"
     )
 
     val epoxy = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
@@ -329,19 +329,19 @@ object KotlinPluginDeps {
 
 object TestDeps {
     val core = listOf(
-            "org.jacoco:org.jacoco.agent:0.7.9:runtime",
-            "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
-            "io.mockk:mockk:${Versions.mockK}",
-            "org.bigtesting:fixd:${Versions.fixd}",
-            "org.koin:koin-test:${Versions.koin}",
-            "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}",
-            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+        "org.jacoco:org.jacoco.agent:0.7.9:runtime",
+        "com.squareup.okhttp3:mockwebserver:${Versions.okHttp}",
+        "io.mockk:mockk:${Versions.mockK}",
+        "org.bigtesting:fixd:${Versions.fixd}",
+        "org.koin:koin-test:${Versions.koin}",
+        "se.lovef:kotlin-assert-utils:${Versions.kotlinAssertUtils}",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
     )
 
     val androidCore = core + listOf(
-            "androidx.room:room-testing:${Versions.room}",
-            "androidx.test:core:${Versions.testCore}",
-            "org.robolectric:robolectric:${Versions.robolectric}"
+        "androidx.room:room-testing:${Versions.room}",
+        "androidx.test:core:${Versions.testCore}",
+        "org.robolectric:robolectric:${Versions.robolectric}"
     )
 
     val ktorServer = "io.ktor:ktor-server-tests:${Versions.ktor}"
@@ -349,15 +349,15 @@ object TestDeps {
 
 object JavaFxTestDeps {
     val core = listOf(
-            "org.testfx:testfx-junit:${Versions.testFx}"
+        "org.testfx:testfx-junit:${Versions.testFx}"
     )
 }
 
 object AndroidTestDeps {
     val core = listOf(
-            "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
-            "androidx.test.espresso:espresso-intents:${Versions.espresso}",
-            "androidx.test:rules:${Versions.testRules}"
+        "androidx.test.espresso:espresso-contrib:${Versions.espresso}",
+        "androidx.test.espresso:espresso-intents:${Versions.espresso}",
+        "androidx.test:rules:${Versions.testRules}"
     ) + TestDeps.androidCore.filterNot { it.contains("org.robolectric:robolectric") }
 
     val barista = "com.schibsted.spain:barista:${Versions.barista}"
