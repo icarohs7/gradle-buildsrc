@@ -378,7 +378,7 @@ object Versions {
     val androidxUi = "0.1.0-dev02"
     val anko = "0.10.8"
     val anotherViewPager = "1.0.2"
-    val apollo = "1.2.0"
+    val apollo = "1.2.1"
     val appCompat = "1.1.0-rc01"
     val arrow = "0.9.0"
     val awsPlatform = "1.11.228"
