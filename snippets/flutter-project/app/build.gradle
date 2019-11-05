@@ -17,11 +17,11 @@ ExtensionsKt.setupFlutterAndroidModuleSettings(
 android {
     buildTypes {
         release {
-            minifyEnabled false
             signingConfig signingConfigs.debug //Remove when adding a valid certificate
         }
     }
 }
+ExtensionsKt.disableProguard(android)
 // ExtensionsKt.enableProguard(android)
 // ExtensionsKt.addReleaseCertificate(
 //         project,
