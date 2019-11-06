@@ -21,8 +21,8 @@ android {
         }
     }
 }
-ExtensionsKt.disableProguard(android)
-// ExtensionsKt.enableProguard(android)
+ExtensionsKt.disableProguard(project)
+// ExtensionsKt.enableProguard(project)
 // ExtensionsKt.addReleaseCertificate(
 //         project,
 //         "keystore file name (folder: project root)",
