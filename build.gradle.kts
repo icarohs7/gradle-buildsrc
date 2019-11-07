@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "4.0.0-alpha01"
+    val gradlePluginVersion = "4.0.0-alpha02"
     val kotlinVersion = "1.3.60-eap-76"
     val navigationVersion = "2.2.0-alpha01"
     val googleServicesVersion = "4.3.1"
@@ -47,8 +47,8 @@ dependencies {
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +
-                       ":local-properties-plugin" +
-                       ":$localPropertiesPluginVersion")
+        ":local-properties-plugin" +
+        ":$localPropertiesPluginVersion")
 }
 
 repositories {
