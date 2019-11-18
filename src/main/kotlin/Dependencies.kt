@@ -401,7 +401,7 @@ object Versions {
     val exposed = "0.17.6"
     val firebaseCore = "17.2.1"
     val firebaseFirestore = "21.0.0"
-    val firebaseMessaging = "20.0.0"
+    val firebaseMessaging = "20.0.1"
     val firebaseStorage = "19.0.0"
     val flashBar = "1.0.3"
     val flexboxLayout = "1.1.1"
