@@ -3,14 +3,14 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "4.0.0-alpha04"
-    val kotlinVersion = "1.3.60"
-    val navigationVersion = "2.2.0-rc02"
+    val gradlePluginVersion = "4.0.0-alpha05"
+    val kotlinVersion = "1.3.61"
+    val navigationVersion = "2.2.0-rc03"
     val googleServicesVersion = "4.3.1"
     val bintrayPluginVersion = "1.8.4"
     val versionsPluginVersion = "0.22.0"
     val gradleGithubPluginVersion = "4.1.1"
-    val apolloGradlePluginVersion = "1.2.0-SNAPSHOT"
+    val apolloGradlePluginVersion = "1.2.2"
     val localPropertiesPluginVersion = "1.1"
 
     implementation(gradleApi())
@@ -43,7 +43,7 @@ dependencies {
     //    implementation("io.freefair.gradle:github-plugin:$gradleGithubPluginVersion")
 
     //id("com.apollographql.apollo")
-    implementation("com.apollographql.apollo:apollo-gradle-plugin-incubating:$apolloGradlePluginVersion")
+    implementation("com.apollographql.apollo:apollo-gradle-plugin:$apolloGradlePluginVersion")
 
     //id("com.github.b3er.local.properties")
     implementation("gradle.plugin.com.github.b3er.local.properties" +

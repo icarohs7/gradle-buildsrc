@@ -4,6 +4,7 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.testing.Test
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
+import org.gradle.kotlin.dsl.closureOf
 import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
@@ -90,29 +91,16 @@ internal fun Project.configureDefaultAndroid() {
             }
         }
 
-        dataBinding.isEnabled = true
+        buildFeatures {
+            dataBinding = true
+        }
 
         compileOptions {
             sourceCompatibility = JavaVersion.VERSION_1_8
             targetCompatibility = JavaVersion.VERSION_1_8
         }
 
-        testOptions {
-            //            execution = "ANDROIDX_TEST_ORCHESTRATOR"
-            unitTests.apply {
-                isIncludeAndroidResources = true
-                isReturnDefaultValues = true
-                all(object : Closure<Test>(this, this) {
-                    @Suppress("unused") // Called by groovy's dark magic
-                    fun doCall(test: Test): Unit = with(test) {
-                        testLogging {
-                            events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
-                            exceptionFormat = TestExceptionFormat.FULL
-                        }
-                    }
-                })
-            }
-        }
+        configureTests()
 
         lintOptions {
             isAbortOnError = false
@@ -125,6 +113,23 @@ internal fun Project.configureDefaultAndroid() {
             pickFirst("META-INF/atomicfu.kotlin_module")
             pickFirst("META-INF/kotlinx-coroutines-core.kotlin_module")
             pickFirst("META-INF/unox-core_shared.kotlin_module")
+        }
+    }
+}
+
+private fun AndroidBlock.configureTests() {
+    testOptions {
+        //            execution = "ANDROIDX_TEST_ORCHESTRATOR"
+        unitTests.apply {
+            isIncludeAndroidResources = true
+            isReturnDefaultValues = true
+
+            all(closureOf<Test> {
+                testLogging {
+                    events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
+                    exceptionFormat = TestExceptionFormat.FULL
+                }
+            } as Closure<Test>)
         }
     }
 }
