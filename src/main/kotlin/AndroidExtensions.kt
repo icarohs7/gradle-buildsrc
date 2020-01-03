@@ -1,13 +1,10 @@
-import groovy.lang.Closure
+import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
-import org.gradle.api.tasks.testing.Test
-import org.gradle.api.tasks.testing.logging.TestExceptionFormat
-import org.gradle.api.tasks.testing.logging.TestLogEvent
-import org.gradle.kotlin.dsl.closureOf
 import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
+import com.android.build.gradle.LibraryExtension as AndroidLibraryBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
 fun AndroidBlock.addReleaseCertificate(
@@ -124,12 +121,12 @@ private fun AndroidBlock.configureTests() {
             isIncludeAndroidResources = true
             isReturnDefaultValues = true
 
-            all(closureOf<Test> {
-                testLogging {
-                    events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
-                    exceptionFormat = TestExceptionFormat.FULL
-                }
-            } as Closure<Test>)
+            //            all(closureOf<Test> {
+            //                testLogging {
+            //                    events(TestLogEvent.PASSED, TestLogEvent.SKIPPED, TestLogEvent.FAILED)
+            //                    exceptionFormat = TestExceptionFormat.FULL
+            //                }
+            //            }) TODO re-enable when fixed on gradle
         }
     }
 }
