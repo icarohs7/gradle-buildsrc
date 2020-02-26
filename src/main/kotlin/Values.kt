@@ -19,7 +19,7 @@ object Versions {
     val minSdk = 21
     val targetSdk = 29
 
-    val kotlin = "1.3.50"
+    val kotlin = "1.3.61"
 
     val androidxTest = "1.2.0"
     val espresso = "3.2.0"
