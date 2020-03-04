@@ -1,10 +1,8 @@
-import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.get
 import java.io.File
 import com.android.build.gradle.AppExtension as AndroidApplicationBlock
-import com.android.build.gradle.LibraryExtension as AndroidLibraryBlock
 import com.android.build.gradle.TestedExtension as AndroidBlock
 
 fun AndroidBlock.addReleaseCertificate(
@@ -88,7 +86,7 @@ internal fun Project.configureDefaultAndroid() {
             }
         }
 
-        buildFeatures {
+        buildFeatures.apply {
             dataBinding = true
         }
 

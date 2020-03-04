@@ -430,7 +430,7 @@ object Versions {
     val kidAdapter = "1.1.5"
     val kodaTime = "2.0.0"
     val koin = "2.0.1"
-    val kotlin = "1.3.61"
+    val kotlin = "1.3.70"
     val kotlinEvents = "v2.0"
     val kotlinFlowExtensions = "0.0.2"
     val kotlinxSerialization = "0.14.0"

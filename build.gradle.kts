@@ -3,8 +3,8 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "4.0.0-alpha06"
-    val kotlinVersion = "1.3.61"
+    val gradlePluginVersion = "4.0.0-beta01"
+    val kotlinVersion = "1.3.70"
     val navigationVersion = "2.2.0-rc03"
     val googleServicesVersion = "4.3.1"
     val bintrayPluginVersion = "1.8.4"
