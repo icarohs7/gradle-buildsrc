@@ -12,7 +12,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 ExtensionsKt.setupFlutterAndroidModuleSettings(
         project,
         localProperties,
-        "company.appname" //TODO full app name here
+        company.appname
 )
 android {
     buildTypes {
