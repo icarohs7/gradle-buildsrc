@@ -3,9 +3,10 @@ plugins {
 }
 
 dependencies {
-    val gradlePluginVersion = "3.6.0"
-    val kotlinVersion = "1.3.61"
+    val gradlePluginVersion = "3.6.2"
+    val kotlinVersion = "1.3.71"
     val googleServicesVersion = "4.3.1"
+	val versionsPluginVersion = "0.28.0"
 
     implementation(gradleApi())
 
@@ -18,6 +19,9 @@ dependencies {
     //Use on last line of buildscript file
     //apply(plugin = "com.google.gms.google-services")
     implementation("com.google.gms:google-services:$googleServicesVersion")
+	
+	//id("com.github.ben-manes.versions")
+    implementation("com.github.ben-manes:gradle-versions-plugin:$versionsPluginVersion")
 }
 
 repositories {
