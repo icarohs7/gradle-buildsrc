@@ -1,1 +1,0 @@
-command to create project: flutter create --androidx --org $org $projectname
