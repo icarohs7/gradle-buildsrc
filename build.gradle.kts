@@ -5,7 +5,7 @@ plugins {
 dependencies {
     val gradlePluginVersion = "3.5.3"
     val kotlinVersion = "1.3.71"
-    val googleServicesVersion = "4.3.1"
+    val googleServicesVersion = "4.3.3"
 	val versionsPluginVersion = "0.28.0"
 
     implementation(gradleApi())
