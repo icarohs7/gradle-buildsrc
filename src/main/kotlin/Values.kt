@@ -16,7 +16,7 @@ object AndroidTestDeps {
 
 object Versions {
     val compileSdk = 30
-    val minSdk = 21
+    val minSdk = 25
     val targetSdk = 30
 
     val kotlin = "1.3.71"
